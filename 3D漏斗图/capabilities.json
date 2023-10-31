@@ -1,0 +1,192 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "ActualValue",
+                "displayNameKey": "数值",
+                "kind": "value",
+                "options": [
+                    {
+                        "displayNameKey": "数据格式",
+                        "type": "format",
+                        "name": "valueFormat"
+                    }
+                ]
+            },
+            {
+                "name": "dimension",
+                "displayNameKey": "分类",
+                "kind": "grouping"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "ActualValue": {
+                                "min": 1
+                            },
+                            "dimension": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "ActualValue": {
+                    "max": 1
+                },
+                "dimension": {
+                    "max": 1
+                }
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayName": "图表样式",
+                "properties": [
+                    {
+                        "name": "backgroundColors",
+                        "type": "Palette",
+                        "displayName": "调色板"
+                    },
+                    {
+                        "name": "bottomWidth",
+                        "type": "Integer",
+                        "displayName": "底部宽度比",
+                        "defaultValue": 3
+                    },
+                    {
+                        "name": "bottomPinch",
+                        "type": "Integer",
+                        "displayName": "图表方正块",
+                        "defaultValue": 0
+                    },
+                    {
+                        "name": "inverted",
+                        "type": "Boolean",
+                        "displayName": "反转",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "curve",
+                        "type": "Boolean",
+                        "displayName": "3D效果",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "curveHeight",
+                        "type": "Integer",
+                        "displayName": "3D效果倾斜",
+                        "defaultValue": 40
+                    },
+                    {
+                        "name": "dynamicHeight",
+                        "type": "Boolean",
+                        "displayName": "动态高度",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "barOverlay",
+                        "type": "Boolean",
+                        "displayName": "宽度侧影",
+                        "defaultValue": false
+                    }
+                ]
+            },
+            {
+                "displayName": "数据标注",
+                "properties": [
+                    {
+                        "name": "labelEnabled",
+                        "type": "Boolean",
+                        "displayName": "数据标注",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "textStyle",
+                        "type": "TextStyle",
+                        "displayName": "字体设置",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true
+                    }
+                ]
+            },
+            {
+                "type": "interaction",
+                "properties": [
+                    {
+                        "name": "leftMouseButton",
+                        "type": "Enum",
+                        "displayName": "鼠标左键选项",
+                        "items": [
+                            {
+                                "value": "none",
+                                "displayNameKey": "无"
+                            },
+                            {
+                                "value": "showToolTip",
+                                "displayNameKey": "显示工具提示"
+                            },
+                            {
+                                "value": "Keep",
+                                "displayNameKey": "保留"
+                            },
+                            {
+                                "value": "Exclude",
+                                "displayNameKey": "排除"
+                            },
+                            {
+                                "value": "Jump",
+                                "displayNameKey": "跳转"
+                            }
+                        ],
+                        "defaultValue": "none"
+                    },
+                    {
+                        "name": "onlySelect",
+                        "type": "Boolean",
+                        "displayName": "数据单选",
+                        "defaultValue": true
+                    }
+                ]
+            },
+            {
+                "type": "title",
+                "defaultValue": {
+                    "defaultValue": "yeb"
+                }
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "rank"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

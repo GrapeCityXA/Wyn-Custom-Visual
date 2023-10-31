@@ -1,0 +1,153 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "values",
+                "displayNameKey": "数值",
+                "kind": "value",
+                "options": [
+                    {
+                        "displayNameKey": "数据格式",
+                        "iconCss": "icon-format-data",
+                        "type": "format",
+                        "name": "valueFormat"
+                    }
+                ]
+            },
+            {
+                "name": "ActualValue",
+                "displayNameKey": "实际值",
+                "kind": "value"
+            },
+            {
+                "name": "ContrastValue",
+                "displayNameKey": "对比值",
+                "kind": "value"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {}
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayName": "自定义属性",
+                "properties": [
+                    {
+                        "name": "showSubTitle",
+                        "type": "Boolean",
+                        "displayName": "显示副标题",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "subtitle",
+                        "type": "Text",
+                        "displayNameKey": "副标题",
+                        "defaultValue": "示例"
+                    },
+                    {
+                        "name": "fontSet",
+                        "displayName": "字体设置",
+                        "type": "TextStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "color": "#f0f0f0",
+                            "fontFamily": "微软雅黑",
+                            "fontSize": "10pt",
+                            "fontStyle": "Normal",
+                            "fontWeight": "Normal"
+                        }
+                    },
+                    {
+                        "name": "borderColor",
+                        "type": "Color",
+                        "displayName": "外环颜色",
+                        "defaultValue": "#20da97"
+                    },
+                    {
+                        "name": "borderBgColor",
+                        "type": "Color",
+                        "displayName": "外环背景颜色",
+                        "defaultValue": "rgba(255, 255, 255, 0.2)"
+                    },
+                    {
+                        "name": "scaleBackgroundColor",
+                        "type": "Color",
+                        "displayName": "刻度背景颜色",
+                        "defaultValue": "#5effea"
+                    },
+                    {
+                        "name": "scaleColor",
+                        "type": "Color",
+                        "displayName": "刻度颜色",
+                        "defaultValue": "rgba(0, 0, 0, 0.5)"
+                    },
+                    {
+                        "name": "scaleFontColor",
+                        "type": "Color",
+                        "displayName": "刻度字体颜色",
+                        "defaultValue": "#fff"
+                    },
+                    {
+                        "name": "scaleFontSize",
+                        "type": "Integer",
+                        "displayName": "刻度字体大小",
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "pointerColor",
+                        "type": "Color",
+                        "displayName": "指针颜色",
+                        "defaultValue": "#5effea"
+                    },
+                    {
+                        "name": "decimalsize",
+                        "type": "Integer",
+                        "displayName": "小数位数",
+                        "defaultValue": 2
+                    }
+                ]
+            },
+            {
+                "type": "interaction"
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "sort"
+        },
+        {
+            "type": "rank"
+        },
+        {
+            "type": "convertVisual"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

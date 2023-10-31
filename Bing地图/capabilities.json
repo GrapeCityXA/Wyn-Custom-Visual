@@ -1,0 +1,368 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "kind": "collection",
+                "displayNameKey": "templates.collectionName",
+                "groups": ["pushPinMapTemplate", "heatMapTemplate", "blockMapTemplate"]
+            }
+        ],
+        "templates": [{
+            "name": "pushPinMapTemplate",
+            "displayNameKey": "templates.pushPinMapTemplate",
+            "dataRoles": [{
+                "name": "latitude",
+                "kind": "grouping",
+                "displayNameKey": "dataRoles.latitude"
+            },
+            {
+                "name": "longitude",
+                "kind": "grouping",
+                "displayNameKey": "dataRoles.longitude"
+            },
+            {
+                "name": "pushPinValue",
+                "kind": "value",
+                "displayNameKey": "dataRoles.size"
+            },
+            {
+                "name": "pushPinCategory",
+                "kind": "groupingOrValue",
+                "displayNameKey": "dataRoles.color"
+            },{
+
+                "name": "tooltip",
+                "displayNameKey": "pinOptions.tooltip",
+                "kind": "attributeOrValue",
+                "options": [{
+                    "type": "tooltipContentSetting",
+                    "name": "tooltipContentSetting",
+                    "displayNameKey": "pinOptions.tooltipContentSetting",
+                    "iconCss": "icon-setting"
+                }]
+            }],
+            "dataViewMappings": [{
+                "plain": {
+                    "dataRoles": [
+                        "latitude",
+                        "longitude",
+                        "pushPinValue",
+                        "pushPinCategory",
+                        "tooltip"
+                    ],
+                    "required": [{
+                        "latitude": { "min": 1 },
+                        "longitude": { "min": 1 }
+                    }]
+                }
+            }],
+            "conditions": [{
+                "latitude": { "max": 1 },
+                "longitude": { "max": 1 },
+                "pushPinValue": { "max": 1 },
+                "pushPinCategory": { "max": 1 }
+            }]
+        }, {
+            "name": "heatMapTemplate",
+            "displayNameKey": "templates.heatMapTemplate",
+            "dataRoles": [{
+                "name": "latitude",
+                "kind": "grouping",
+                "displayNameKey": "dataRoles.latitude"
+            },
+            {
+                "name": "longitude",
+                "kind": "grouping",
+                "displayNameKey": "dataRoles.longitude"
+            },
+            {
+                "name": "heatMapValue",
+                "kind": "value",
+                "displayNameKey": "dataRoles.values"
+            }],
+            "dataViewMappings": [{
+                "plain": {
+                    "dataRoles": [
+                        "latitude",
+                        "longitude",
+                        "heatMapValue"
+                    ],
+                    "required": [{
+                        "latitude": { "min": 1 },
+                        "longitude": { "min": 1 },
+                        "heatMapValue": { "min": 1 }
+                    }]
+                }
+            }],
+            "conditions": [{
+                "latitude": { "max": 1 },
+                "longitude": { "max": 1 },
+                "heatMapValue": { "max": 1 }
+            }]
+        }, {
+            "name": "blockMapTemplate",
+            "displayNameKey": "templates.blockMapTemplate",
+            "dataRoles": [{
+                "name": "firstLevelLocationDivision",
+                "displayNameKey": "dataRoles.firstLevelLocationDivision",
+                "kind": "grouping"
+            },
+            {
+                "name": "secondLevelLocationDivision",
+                "displayNameKey": "dataRoles.secondLevelLocationDivision",
+                "kind": "grouping"
+            },
+            {
+                "name": "thirdLevelLocationDivision",
+                "displayNameKey": "dataRoles.thirdLevelLocationDivision",
+                "kind": "grouping"
+            },
+            {
+                "name": "blockMapValue",
+                "kind": "attributeOrValue",
+                "preferredKind": "value",
+                "displayNameKey": "dataRoles.values"
+            },{
+
+                "name": "tooltip",
+                "displayNameKey": "pinOptions.tooltip",
+                "kind": "attributeOrValue",
+                "options": [{
+                    "type": "tooltipContentSetting",
+                    "name": "tooltipContentSetting",
+                    "displayNameKey": "pinOptions.tooltipContentSetting",
+                    "iconCss": "icon-setting"
+                }]
+            }],
+            "dataViewMappings": [{
+                "matrix": {
+                    "values": ["blockMapValue"],
+                    "rows": ["firstLevelLocationDivision", "secondLevelLocationDivision", "thirdLevelLocationDivision", "tooltip"],
+                    "columns": [],
+                    "rowGrandTotal": true,
+                    "columnGrandTotal": true,
+                    "required": [{
+                        "blockMapValue": { "min": 1 }
+                    }]
+                }
+            }],
+            "conditions": [{
+                "firstLevelLocationDivision": { "max": 1 },
+                "secondLevelLocationDivision": { "max": 1 },
+                "thirdLevelLocationDivision": { "max": 1 },
+                "blockMapValue": { "max": 1 }
+            }]
+        }]
+    },
+    "options": {
+        "visual": [
+            {
+                "properties": [{
+                    "name": "hoverAct",
+                    "type": "Boolean",
+                    "displayNameKey": "hoverAct",
+                    "defaultValue": true
+                }, {
+                    "name": "mapType",
+                    "type": "Enum",
+                    "items": [{
+                        "value": "road",
+                        "displayNameKey": "mapType.road"
+                    }, {
+                        "value": "canvasDark",
+                        "displayNameKey": "mapType.canvasDark"
+                    }, {
+                        "value": "grayscale",
+                        "displayNameKey": "mapType.grayscale"
+                    }, {
+                        "value": "aerial",
+                        "displayNameKey": "mapType.aerial"
+                    }, {
+                        "value": "birdseye",
+                        "displayNameKey": "mapType.birdseye"
+                    }, {
+                        "value": "streetside",
+                        "displayNameKey": "mapType.streetside"
+                    }],
+                    "displayNameKey": "mapType.name",
+                    "defaultValue": "road"
+                }]
+            },
+            {
+                "displayNameKey": "pinOptions.name",
+                "properties": [
+                    {
+                        "name": "maxRadius",
+                        "type": "Integer",
+                        "displayNameKey": "pinOptions.maxRadius",
+                        "min": 1,
+                        "defaultValue": 50
+                    },
+                    {
+                        "name": "showSizeLegend",
+                        "type": "Boolean",
+                        "displayNameKey": "pinOptions.showSizeLegend",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showDataLabel",
+                        "type": "Boolean",
+                        "displayNameKey": "pinOptions.showDataLabel",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "colorPreference",
+                        "type": "Enum",
+                        "items": [{
+                            "value": "palette",
+                            "displayNameKey": "pinOptions.colorPreference.palette"
+                        }, {
+                            "value": "gradient",
+                            "displayNameKey": "pinOptions.colorPreference.gradient"
+                        }],
+                        "displayNameKey": "pinOptions.colorPreference.name",
+                        "defaultValue": "palette"
+                    },
+                    {
+                        "name": "baseColor",
+                        "type": "Color",
+                        "displayNameKey": "pinOptions.baseColor",
+                        "defaultValue": "rgb(243, 128, 68)"
+                    },
+                    {
+                        "name": "gradientPreference",
+                        "type": "Enum",
+                        "items": [{
+                            "value": "gradual",
+                            "displayNameKey": "pinOptions.gradientPreference.gradual"
+                        }, {
+                            "value": "grouped",
+                            "displayNameKey": "pinOptions.gradientPreference.grouped"
+                        }],
+                        "displayNameKey": "pinOptions.gradientPreference.name",
+                        "defaultValue": "gradual"
+                    },
+                    {
+                        "name": "rangeCount",
+                        "type": "Integer",
+                        "displayNameKey": "pinOptions.rangeCount",
+                        "defaultValue": 5,
+                        "min": 1
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "colorStyle.name",
+                "properties": [
+                    {
+                        "name": "maintainColorAssignments",
+                        "type": "ColorAssignment",
+                        "displayNameKey": "colorStyle.maintainColorAssignments",
+                        "defaultValue": false,
+                        "palettePath": "paletteId"
+                    },
+                    {
+                        "name": "paletteId",
+                        "type": "Palette",
+                        "displayNameKey": "colorStyle.palette",
+                        "inheritFrom": "dashboard.palette"
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "heatOptions.name",
+                "properties": [
+                    {
+                        "name": "step",
+                        "type": "Integer",
+                        "displayNameKey": "heatOptions.step",
+                        "min": 1,
+                        "defaultValue": 2
+                    },
+                    {
+                        "name": "radius",
+                        "type": "Float",
+                        "displayNameKey": "heatOptions.radius",
+                        "min": 0,
+                        "defaultValue": 20
+                    },
+                    {
+                        "name": "unit",
+                        "type": "Enum",
+                        "displayNameKey": "heatOptions.unit",
+                        "items": [
+                            {
+                                "value": "pixels",
+                                "displayNameKey": "heatOptions.pixels"
+                            },
+                            {
+                                "value": "meters",
+                                "displayNameKey": "heatOptions.meters"
+                            }
+                        ],
+                        "defaultValue": "pixels"
+                    }
+                ]
+            },
+            {
+                "properties": [{
+                    "name": "mapCenter",
+                    "defaultValue": {},
+                    "hidden": true
+                }, {
+                    "name": "pinCenter",
+                    "defaultValue": {},
+                    "hidden": true
+                }]
+            },
+            {
+                "type": "interaction",
+                "disable": {
+                    "jumpTo": true,
+                    "contextMenuActions": true
+                }
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "clearSelection"
+        },
+        {
+            "type": "edit"
+        },
+        {
+            "type": "focus"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "rank"
+        },
+        {
+            "type": "analysisPath"
+        },
+        {
+            "type": "shareScenario"
+        },
+        {
+            "type": "openFullDashboard"
+        },
+        {
+          "type": "saveAsTemplate"
+        }],
+    "analysis": []
+}

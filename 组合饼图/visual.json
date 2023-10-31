@@ -1,0 +1,20 @@
+{
+    "id": "c7d42f60-32f9-11ec-93d8-7d0c935474c2",
+    "name": "组合饼图",
+    "displayName": "组合饼图",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": [
+        "echarts"
+    ],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "cliVersion": "6.0.0"
+}

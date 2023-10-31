@@ -1,0 +1,129 @@
+{
+    "dataBinding": {
+    },
+    "options": {
+        "visual": [
+            {
+                "displayName": "图表样式",
+                "properties": [
+
+                    {
+                        "name": "mode",
+                        "type": "Enum",
+                        "displayName": "模式",
+                        "items": [
+                            {
+                                "value": "standard",
+                                "displayNameKey": "标准"
+                            },
+                            {
+                                "value": "simple",
+                                "displayNameKey": "简易"
+                            }
+                        ],
+                        "defaultValue": "standard"
+                    },
+                    {
+                        "name": "autoCity",
+                        "type": "Boolean",
+                        "displayName": "开启自动定位城市",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "cityList",
+                        "type": "Collection",
+                        "displayName": "城市列表",
+                        "itemShape": {
+                            "type": "Text"
+                        },
+                        "defaultValue": ["北京"]
+                    },
+                    {
+                        "name": "intervalTime",
+                        "type": "Integer",
+                        "displayName": "轮播时间间隔",
+                        "min": 1,
+                        "defaultValue": 3
+                    },
+                    {
+                        "name": "dataColor",
+                        "type": "Color",
+                        "displayName": "文字颜色",
+                        "defaultValue": "#fff"
+                    },
+                    {
+                        "name": "autoBackgroundColor",
+                        "type": "Boolean",
+                        "displayName": "开启自定义背景颜色",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "backgroundColor",
+                        "type": "Color",
+                        "displayName": "背景颜色",
+                        "defaultValue": "#a9cdf3"
+                    },
+                    {
+                        "name": "borderRadius",
+                        "type": "Integer",
+                        "displayName": "圆角",
+                        "min": 0,
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "width",
+                        "type": "Integer",
+                        "displayName": "宽度",
+                        "min": 10,
+                        "defaultValue": 450
+                    },
+                    {
+                        "name": "height",
+                        "type": "Integer",
+                        "displayName": "高度",
+                        "min": 10,
+                        "defaultValue": 150
+                    },
+                    {
+                        "name": "language",
+                        "type": "Enum",
+                        "displayName": "语言",
+                        "items": [
+                            {
+                                "value": "",
+                                "displayNameKey": "跟随系统"
+                            },
+                            {
+                                "value": "zh",
+                                "displayNameKey": "中文"
+                            },
+                            {
+                                "value": "en",
+                                "displayNameKey": "英文"
+                            }
+                        ],
+                        "defaultValue": ""
+                    }
+                ]
+            },
+            {
+                "type": "interaction"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+            "type": "export"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

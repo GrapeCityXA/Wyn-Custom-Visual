@@ -1,0 +1,298 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "ActualValue",
+                "displayNameKey": "数值",
+                "kind": "value"
+            },
+            {
+                "name": "dimension",
+                "displayNameKey": "X 轴",
+                "kind": "grouping"
+            },
+            {
+                "name": "series",
+                "displayNameKey": "Y 轴",
+                "kind": "grouping"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "ActualValue": {
+                                "min": 1
+                            },
+                            "dimension": {
+                                "min": 1
+                            },
+                            "series": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "ActualValue": {
+                    "max": 1
+                },
+                "dimension": {
+                    "max": 1
+                },
+                "series": {
+                    "max": 1
+                }
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayName": "图表样式",
+                "properties": [
+                    {
+                        "name": "heatType",
+                        "type": "Enum",
+                        "displayName": "点的形状",
+                        "items": [
+                            {
+                                "value": "scatter",
+                                "displayNameKey": "气泡"
+                            },
+                            {
+                                "value": "heatmap",
+                                "displayNameKey": "方块"
+                            }
+                        ],
+                        "defaultValue": "scatter"
+                    },
+                    {
+                        "name": "heatFillType",
+                        "type": "Enum",
+                        "displayName": "填充方式",
+                        "items": [
+                            {
+                                "value": "single",
+                                "displayNameKey": "单色填充"
+                            },
+                            {
+                                "value": "multiple",
+                                "displayNameKey": "多色填充"
+                            }
+                        ],
+                        "defaultValue": "single"
+                    },
+                    {
+                        "name": "pointColorSingle",
+                        "type": "Color",
+                        "displayName": "气泡颜色",
+                        "defaultValue": "#ffde76"
+                    },
+                    {
+                        "name": "pointColorMultiple",
+                        "type": "Palette",
+                        "displayName": "调色板",
+                        "defaultValue": "[#fff4d1, #ffe9a4, #ffde76, #ffd348, #bf9e36, #806a24]"
+                    },
+                    {
+                        "name": "symbolSizeMin",
+                        "type": "Integer",
+                        "displayNameKey": "气泡最小值",
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "symbolSizeMax",
+                        "type": "Integer",
+                        "displayNameKey": "气泡最大值",
+                        "defaultValue": 30
+                    },
+                    {
+                        "name": "openEffect",
+                        "type": "Boolean",
+                        "displayNameKey": "开启条件格式",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "effectNumber",
+                        "type": "Integer",
+                        "displayNameKey": "格式数据位数",
+                        "defaultValue": 3
+                    },
+                    {
+                        "name": "effectType",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "max",
+                                "displayNameKey": "最大值"
+                            },
+                            {
+                                "value": "min",
+                                "displayNameKey": "最小值"
+                            }
+                        ],
+                        "displayNameKey": "格式类型",
+                        "defaultValue": "max"
+                    },
+                    {
+                        "name": "customColor",
+                        "type": "Palette",
+                        "displayName": "调色板",
+                        "defaultValue": "[#fff4d1, #ffe9a4, #ffde76, #ffd348, #bf9e36, #806a24]"
+                    },
+                    {
+                        "name": "textStyle",
+                        "type": "TextStyle",
+                        "displayName": "字体设置",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "fontSize": "14px"
+                        }
+                    }
+                ]
+            },
+            {
+                "displayName": "图例",
+                "properties": [
+                    {
+                        "name": "showLegend",
+                        "type": "Boolean",
+                        "displayName": "显示图例",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "legendPosition",
+                        "type": "Enum",
+                        "displayName": "位置",
+                        "items": [
+                            {
+                                "value": "left",
+                                "displayNameKey": "左侧"
+                            },
+                            {
+                                "value": "right",
+                                "displayNameKey": "右侧"
+                            },
+                            {
+                                "value": "top",
+                                "displayNameKey": "顶部"
+                            },
+                            {
+                                "value": "bottom",
+                                "displayNameKey": "底部"
+                            }
+                        ],
+                        "defaultValue": "top"
+                    },
+                    {
+                        "name": "legendVerticalPosition",
+                        "type": "Enum",
+                        "displayName": "水平位置",
+                        "items": [
+                            {
+                                "value": "left",
+                                "displayNameKey": "居左"
+                            },
+                            {
+                                "value": "center",
+                                "displayNameKey": "居中"
+                            },
+                            {
+                                "value": "right",
+                                "displayNameKey": "居右"
+                            }
+                        ],
+                        "defaultValue": "center"
+                    },
+                    {
+                        "name": "legendHorizontalPosition",
+                        "type": "Enum",
+                        "displayName": "垂直位置",
+                        "items": [
+                            {
+                                "value": "top",
+                                "displayNameKey": "顶部"
+                            },
+                            {
+                                "value": "middle",
+                                "displayNameKey": "居中"
+                            },
+                            {
+                                "value": "bottom",
+                                "displayNameKey": "底部"
+                            }
+                        ],
+                        "defaultValue": "top"
+                    },
+                    {
+                        "name": "legendTextStyle",
+                        "type": "TextStyle",
+                        "displayName": "字体设置",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "fontSize": "14px"
+                        }
+                    }
+                ]
+            },
+            {
+                "displayName": "数据标注",
+                "properties": [
+                    {
+                        "name": "dataindicate",
+                        "type": "Boolean",
+                        "displayName": "显示数据标注",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "dataindicateTextStyle",
+                        "type": "TextStyle",
+                        "displayName": "字体设置",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "fontSize": "14px"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "interaction"
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "rank"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

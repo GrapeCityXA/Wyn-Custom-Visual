@@ -1,0 +1,32 @@
+{
+  "animationNumber": "Animation Number",
+  "dataBinding": {
+    "actualValue": "Numeric Value"
+  },
+  "property": {
+    "chartStyle": "Chart Style",
+    "animationMode": {
+      "name": "Animation Mode",
+      "slide": "Slide",
+      "flip": "Flip"
+    },
+    "animationDuration": "Animation Duration",
+    "decimalLength": "Decimal Digits",
+    "integerType": {
+      "name": "Integer Digits Setting",
+      "auto": "Auto",
+      "manual": "Manual"
+    },
+    "integerLength": "Integer Digits",
+    "showThousandSign": "Show Thousand Sign",
+    "backgroundColor": "Background Color",
+    "gradientBackgroundColor": "Gradient Background Color",
+    "gradientType": {
+      "name": "Gradient Type",
+      "null": "None",
+      "center": "Center",
+      "topToBottom": "Both Ends"
+    },
+    "fontSetting": "Font Setting"
+  }
+}

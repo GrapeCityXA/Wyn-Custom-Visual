@@ -1,0 +1,17 @@
+{
+    "name": "直方图",
+    "displayName": "直方图",
+    "displayNameKey": "histogram",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "id": "7ed2ad70-b93a-11eb-b14a-9faf8f36571b",
+    "cliVersion": "6.0.0"
+}

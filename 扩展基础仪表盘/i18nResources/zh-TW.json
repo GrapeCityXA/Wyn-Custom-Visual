@@ -1,0 +1,135 @@
+{
+  "extendedIndicator": "擴充套件指示器",
+  "dataBinding": {
+    "actualValue": "實際值",
+    "dataFormat": "資料格式",
+    "displayUnit": "資料單位",
+    "contrastValue": "對比值"
+  },
+  "property": {
+    "fontSetting": "字型設定",
+    "dataSetting": {
+      "name": "資料設定",
+      "actual": "實際值來源",
+      "contrast": "對比值來源",
+      "dataset": "資料集",
+      "customdata": "自定義資料",
+      "customActual": "自定義實際值",
+      "customContrast": "自定義對比值"
+    },
+    "chartStyle": {
+      "name": "圖表樣式",
+      "quickStyle": {
+        "name": "快速樣式",
+        "default": "預設",
+        "style1": "樣式1",
+        "style2": "樣式2",
+        "style3": "樣式3",
+        "style4": "樣式4",
+        "style5": "樣式5",
+        "style6": "樣式6",
+        "style7": "樣式7",
+        "style8": "樣式8",
+        "style9": "樣式9",
+        "init": "預設樣式值"
+      },
+      "gaugeR": "錶盤半徑",
+      "gaugeWidth": "錶盤寬度",
+      "xPosition": "X偏移量",
+      "yPosition": "Y偏移量",
+      "startAngle": "起始角度",
+      "endAngle": "終止角度",
+      "gaugeColor": "刻度盤顏色"
+    },
+    "rangeSetting": {
+      "name": "區間劃分",
+      "color": "區間色",
+      "section": "區間號",
+      "sectionMax": "區間上限值",
+      "sectionColor": "區間顏色",
+      "applyToProgress": "作用到進度條",
+      "applyToCircle": "作用到內圓環",
+      "applyToLabel1": "作用到標籤1",
+      "applyToLabel2": "作用到標籤2"
+    },
+    "bgImageSetting": {
+      "name": "背景圖片樣式",
+      "showBgImage": "顯示背景",
+      "bgImageAnimate": "背景旋轉",
+      "bgAnimateTime": "旋轉時間",
+      "bgAnimateDirection": {
+        "name": "旋轉方向",
+        "positive": "順時針",
+        "negative": "逆時針"
+      },
+      "imageSetting": {
+        "name": "圖片設定",
+        "bgImage1": "背景圖一",
+        "bgImage2": "背景圖二",
+        "custom": "自定義"
+      },
+      "bgImage": "背景圖片",
+      "bgImageSize": "圖片大小"
+    },
+    "innerSetting": {
+      "name": "內圓環樣式",
+      "gaugeCircle": "顯示內圓環",
+      "gaugeCircleDge": "角度跟隨儀表盤",
+      "gaugeCircleStartColor": "內圓環開始顏色",
+      "gaugeCircleEndColor": "內圓環結束顏色",
+      "gaugeCircleInsideR": "內圓環內徑",
+      "gaugeCircleOutsideR": "內圓環外徑"
+    },
+    "gearSetting": {
+      "name": "齒輪樣式",
+      "gaugeGear": "顯示齒輪",
+      "gearNumber": "齒輪個數",
+      "gearR": "齒輪半徑",
+      "gearWidth": "齒輪寬度",
+      "gearLength": "齒輪長度",
+      "gearColor": "齒輪顏色",
+      "gearShadowColor": "齒輪陰影顏色"
+    },
+    "progressSetting": {
+      "name": "進度條樣式",
+      "showProgress": "顯示進度條",
+      "progressRoundCap": "進度條圓角",
+      "progressWidth": "進度條寬度",
+      "progressOffset": "進度條偏移量",
+      "progressColor": "進度條顏色",
+      "progressGradientColor": "進度條漸變顏色"
+    },
+    "splitLineSetting": {
+      "name": "刻度盤分隔線樣式",
+      "showsplitLine": "顯示分隔線",
+      "splitLineNumber": "分割數量",
+      "splitLineWidth": "線寬",
+      "splitLineDistance": "線和軸的距離",
+      "splitLineColor": "分隔線顏色"
+    },
+    "subTitleSetting": {
+      "name": "副標題樣式",
+      "showSubTitle": "顯示副標題",
+      "subtitle": "副標題",
+      "xPosition": "標籤X偏移量",
+      "yPosition": "標籤Y偏移量"
+    },
+    "dataLabel": {
+      "dataLabel1": "資料標籤1",
+      "dataLabel2": "資料標籤2",
+      "showDataLabel": "資料標籤",
+      "showActual": "實際值",
+      "showContrast": "對比值",
+      "showDetail": "百分比",
+      "lineHeight": "標籤行高",
+      "xPosition": "標籤X偏移量",
+      "yPosition": "標籤Y偏移量",
+      "unit": "字尾單位",
+      "unitFontSetting": "字尾單位字型設定"
+    },
+    "clickAction": {
+      "name": "滑鼠左鍵選項",
+      "jump": "跳轉"
+    }
+  }
+}

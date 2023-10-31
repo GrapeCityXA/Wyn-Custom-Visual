@@ -1,0 +1,75 @@
+{
+  "bingMap": "Bing Map",
+  "key": "Key",
+  "dataRoles": {
+    "longitude": "Longitude",
+    "latitude": "Latitude",
+    "size": "Size",
+    "color": "Color",
+    "values": "Values",
+    "category": "Category",
+    "firstLevelLocationDivision": "Country Region",
+    "secondLevelLocationDivision": "First Admin Division",
+    "thirdLevelLocationDivision": "Second Admin Division"
+  },
+  "templates": {
+    "collectionName": "Layers",
+    "pushPinMapTemplate": "PushPin Map Layer",
+    "heatMapTemplate": "Heat Map Layer",
+    "blockMapTemplate": "Block Map Layer"
+  },
+  "chartType": {
+    "name": "Chart Type",
+    "scatter": "Scatter Plot",
+    "heat": "Heat",
+    "block": "Block"
+  },
+  "mapType": {
+    "name": "Map Type",
+    "road": "road",
+    "canvasDark": "canvasDark",
+    "grayscale": "grayscale",
+    "aerial": "aerial",
+    "birdseye": "birdseye",
+    "streetside": "streetside"
+  },
+  "colorStyle": {
+    "name": "Color Style",
+    "maintainColorAssignments": "Maintain Color Assignments",
+    "palette": "Palette"
+  },
+  "hoverAct": "Show ToolTip on hover",
+  "pinOptions": {
+    "name": "Pin Map Options",
+    "maxRadius": "Max Radius",
+    "colorPreference": {
+      "name": "Color Preference",
+      "palette": "Palette",
+      "gradient": "Gradient"
+    },
+    "baseColor": "Base Color",
+    "gradientPreference": {
+      "name": "Gradient Preference",
+      "gradual": "Gradual",
+      "grouped": "Grouped"
+    },
+    "rangeCount": "Range Count",
+    "showSizeLegend": "Show Size Legend",
+    "showDataLabel": "Show Data Label",
+    "tooltip": "Tooltip",
+    "tooltipContentSetting": "Setting..."
+  },
+  "heatOptions": {
+    "name": "Heat Map Options",
+    "step": "Step",
+    "radius": "Radius",
+    "unit": "Radius Unit",
+    "pixels": "pixels",
+    "meters": "meters"
+  },
+  "blockOptions": {
+    "name": "Block Map Options",
+    "locType": "Location Type"
+  },
+  "null": "[Null]"
+}

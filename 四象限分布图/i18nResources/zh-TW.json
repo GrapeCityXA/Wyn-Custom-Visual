@@ -1,0 +1,39 @@
+{
+  "quadrantTypeScatterPlot": "象限分析圖",
+  "plotData": {
+    "name": "名称",
+    "x": "X轴",
+    "y": "Y轴"
+  },
+  "chartMargin": {
+    "name": "表边距",
+    "left": "左",
+    "top": "上",
+    "bottom": "下",
+    "right": "右"
+  },
+  "slicePoint": {
+    "name": "象限分割点",
+    "x": "X",
+    "y": "Y"
+  },
+  "showLabel": {
+    "title": "显示标签",
+    "property": "显示标签"
+  },
+  "quadrants": {
+    "name": [
+      "第一象限",
+      "第二象限",
+      "第三象限",
+      "第四象限"
+    ],
+    "properties": {
+      "color": "颜色",
+      "name": "名称",
+      "textStyle": "字体",
+      "offsetX": "X偏移量",
+      "offsetY": "Y偏移量"
+    }
+  }
+}

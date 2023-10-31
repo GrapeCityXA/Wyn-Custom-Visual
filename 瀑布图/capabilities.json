@@ -1,0 +1,267 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "ActualValue",
+                "displayNameKey": "数值",
+                "kind": "value",
+                "options": [
+                    {
+                        "displayNameKey": "数据格式",
+                        "type": "format",
+                        "name": "valueFormat"
+                    }
+                ]
+            },
+            {
+                "name": "dimension",
+                "displayNameKey": "分类",
+                "kind": "grouping"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "ActualValue": {
+                                "min": 1
+                            },
+                            "dimension": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "ActualValue": {
+                    "max": 1
+                },
+                "dimension": {
+                    "max": 1
+                }
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayName": "图表样式",
+                "properties": [
+                    {
+                        "name": "fontSize",
+                        "type": "Integer",
+                        "displayName": "字体大小",
+                        "defaultValue": 14
+                    },
+                    {
+                        "name": "textColor",
+                        "type": "Color",
+                        "displayName": "字体颜色",
+                        "defaultValue": "#ffffff"
+                    },
+                    {
+                        "name": "customPaletteColor",
+                        "type": "Palette",
+                        "displayName": "调色板",
+                        "defaultValue": "#eb4b5c"
+                    },
+                    {
+                        "name": "customOpacity",
+                        "type": "Percentage",
+                        "displayName": "图标透明度",
+                        "defaultValue": "50"
+                    },
+                    {
+                        "name": "customShowLine",
+                        "type": "Boolean",
+                        "displayName": "显示辅助线",
+                        "defaultValue": "true" 
+                    },
+                    {
+                        "name": "customLineColor",
+                        "type": "Color",
+                        "displayName": "辅助线颜色",
+                        "defaultValue": "#eb4b5c" 
+                    }, 
+                    {
+                        "name": "showTotal",
+                        "type": "Boolean",
+                        "displayName": "显示累计",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "totalColor",
+                        "type": "Color",
+                        "displayName": "累计列颜色设置",
+                        "defaultValue": "#26a69a" 
+                    }
+                ]
+            },
+            {
+                "displayName": "数据标注",
+                "properties": [
+                    {
+                        "name": "customShowMark",
+                        "type": "Boolean",
+                        "displayName": "显示标注",
+                        "defaultValue": "false" 
+                    },
+                    {
+                        "name": "showTextStyle",
+                        "displayName": "字体设置",
+                        "type": "TextStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "color": "#f0f0f0",
+                            "fontFamily": "微软雅黑",
+                            "fontSize": "10pt",
+                            "fontStyle": "Normal",
+                            "fontWeight": "Normal"
+                        }
+                    },
+                    {
+                        "name": "labelPosition",
+                        "type": "Enum",
+                        "displayName": "显示位置",
+                        "items": [
+                            {
+                                "value": "top",
+                                "displayNameKey": "顶部"
+                            }, {
+                                "value": "bottom",
+                                "displayNameKey": "底部"
+                            }, {
+                                "value": "inside",
+                                "displayNameKey": "居内部右"
+                            }
+                        ],
+                        "defaultValue": "top"
+                    }
+                ]
+            },
+            {
+                "displayName": "图例",
+                "properties": [
+                    {
+                        "name": "customShowLegend",
+                        "type": "Boolean",
+                        "displayName": "显示图例",
+                        "defaultValue": "true" 
+                    },
+                    {
+                        "name": "legendFontSize",
+                        "type": "Integer",
+                        "displayName": "字体大小",
+                        "defaultValue": 14
+                    },
+                    {
+                        "name": "legendVerticalPosition",
+                        "type": "Enum",
+                        "displayName": "水平位置",
+                        "items": [
+                            {
+                                "value": "left",
+                                "displayNameKey": "居左"
+                            }, {
+                                "value": "center",
+                                "displayNameKey": "居中"
+                            }, {
+                                "value": "right",
+                                "displayNameKey": "居右"
+                            }
+                        ],
+                        "defaultValue": "left"
+                    },
+                    {
+                        "name": "legendHorizontalPosition",
+                        "type": "Enum",
+                        "displayName": "垂直位置",
+                        "items": [
+                            {
+                                "value": "top",
+                                "displayNameKey": "顶部"
+                            }, {
+                                "value": "middle",
+                                "displayNameKey": "居中"
+                            }, {
+                                "value": "bottom",
+                                "displayNameKey": "底部"
+                            }
+                        ],
+                        "defaultValue": "top"
+                    }
+                ]
+            },
+            {
+                "type": "interaction",
+                "properties": [{
+                    "name": "leftMouseButton",
+                    "type": "Enum",
+                    "displayName": "鼠标左键选项",
+                    "items": [
+                        {
+                            "value": "none",
+                            "displayNameKey": "无"
+                        },
+                        {
+                            "value": "showToolTip",
+                            "displayNameKey": "显示工具提示"
+                        },
+                        {
+                            "value": "Keep",
+                            "displayNameKey": "保留"
+                        },
+                        {
+                            "value": "Exclude",
+                            "displayNameKey": "排除"
+                        },
+                        {
+                            "value": "Jump",
+                            "displayNameKey": "跳转"
+                        }
+                    ],
+                    "defaultValue": "none"
+                },
+                {
+                        "name": "onlySelect",
+                        "type": "Boolean",
+                        "displayName": "数据单选",
+                        "defaultValue": true
+				}
+            ]
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "rank"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

@@ -1,0 +1,39 @@
+{
+  "quadrantTypeScatterPlot": "Quadrant Type Scatter Plot",
+  "plotData": {
+    "name": "name",
+    "x": "X-Axis",
+    "y": "Y-Axis"
+  },
+  "chartMargin": {
+    "name": "Chart Margin",
+    "left": "Left",
+    "top": "Top",
+    "bottom": "bottom",
+    "right": "right"
+  },
+  "slicePoint": {
+    "name": "Slice Point",
+    "x": "X",
+    "y": "Y"
+  },
+  "showLabel": {
+    "title": "Show Label",
+    "property": "Show Label"
+  },
+  "quadrants": {
+    "name": [
+      "First Quadrant",
+      "Second Quadrant",
+      "Third Quadrant",
+      "Fourth Quadrant"
+    ],
+    "properties": {
+      "color": "Color",
+      "name": "Name",
+      "textStyle": "TextStyle",
+      "offsetX": "Offset-X",
+      "offsetY": "Offset-Y"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "boxAndWhiskersPlot": "Box and Whiskers Plot",
+  "dataBinding": {
+    "value": "Value",
+    "variation": "Sampling",
+    "category": "Category",
+    "series": "Series"
+  },
+  "options": {
+    "boxPlotStyle": "BoxPlot Style",
+    "maintainColorAssignment": "Maintain Color Assignments",
+    "color": "Palette",
+    "opacity": "Graph Opacity",
+    "isFill": "Fill BackgroundColor",
+    "boxWidth": "BoxPlot Width",
+    "borderWidth": "Border Width",
+    "borderType": "Border Type",
+    "solid": "Solid",
+    "dashed": "Dashed",
+    "dotted": "Dotted",
+    "showOutliers": "Show Outliers",
+    "symbolSize": "Outlier Size",
+    "large": "Optimize Outliers",
+    "largeThreshold": "Outliers Threshold",
+    "legend": "Legend",
+    "showLegend": "Show Legend",
+    "legendTextStyle": "Legend Text Style",
+    "categoryAxis": "Axis(category)",
+    "valueAxis": "Value Axis",
+    "showAxis": "Show Axis",
+    "showAxisLine": "Show Axis Line",
+    "showTickLabels": "Show Tick Labels",
+    "showTickMarks": "Show Tick Marks",
+    "axisTextStyle": "Axis Font TextStyle",
+    "showSplitLine": "Show Grid Lines"
+  },
+  "visual": {
+    "lower": "Lower",
+    "q1": "Q1",
+    "median": "Median",
+    "q3": "Q3",
+    "upper": "Upper",
+    "null": "[NULL]",
+    "emptyDisplay": "[Blank]"
+  }
+}

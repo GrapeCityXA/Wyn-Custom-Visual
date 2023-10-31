@@ -1,0 +1,17 @@
+{
+    "name": "Organization Diagram",
+    "displayName": "Organization Diagram",
+    "displayNameKey": "organizationDiagram",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "cliVersion": "5.0.0",
+    "id": "8b1c5050-bd3f-11eb-a85d-ff52fc9c47cd"
+}

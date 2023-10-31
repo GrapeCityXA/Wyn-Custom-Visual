@@ -1,0 +1,163 @@
+{
+  "compareBarChart": "Compare Bar Chart",
+  "dataBinding": {
+    "actualValue": "Actual Value",
+    "contrastValue": "Contrast Value",
+    "dataFormat": "Data Format",
+    "compareCol": "Comparison Field",
+    "dimension": "Category",
+    "tooltip": "Tooltip"
+  },
+  "property": {
+    "chartStyle": "Chart Style",
+    "quickStyle": {
+      "name": "Quick Style",
+      "default": "Default",
+      "style1": "Style1",
+      "style2": "Style2",
+      "style3": "Style3",
+      "style4": "Style4",
+      "init": "Default Style Value"
+    },
+    "barWidth": "Bar Width",
+    "showBackground": "Show background",
+    "backgroundColor": "Background Color",
+    "greCompareCol": "Greater Than Comparison Field",
+    "lesCompareCol": "Less Than Comparison Field",
+    "barEndColor": "Start Color",
+    "barStartColor": "End Color",
+    "inner": "Gradient Color Position",
+    "sortAccording": {
+      "name": "Sort By",
+      "percent": "Percentage",
+      "actual": "Actual Value",
+      "noOrder": "No Order"
+    },
+    "sortType": {
+      "name": "Sort Type",
+      "asc": "Ascending",
+      "desc": "Descending"
+    },
+    "symbolType": {
+      "name": "Symbol Type",
+      "bar": "Bar",
+      "circle": "Circle",
+      "rect": "Rectangle",
+      "roundRect": "Rounded Square",
+      "triangle": "Triangle",
+      "diamond": "Diamond",
+      "pin": "Pin",
+      "arrow": "Arrow",
+      "custom": "Custom Image"
+    },
+    "radius": {
+      "leftTop": "Round Left Top",
+      "rightTop": "Round Right Top",
+      "leftBottom": "Round Left Bottom",
+      "rightBottom": "Round Right Bottom"
+    },
+    "symbolImage": {
+      "name": "Symbol Image",
+      "sizeX": "Image Width",
+      "sizeY": "Image Height",
+      "margin": "Image Margin",
+      "endName": "End Image",
+      "endSizeX": "End Image Width",
+      "endSizeY": "End Image Height",
+      "endMargin": "End Margin"
+    },
+    "carousel": {
+      "name": "Carousel Animation",
+      "open": "Turn On",
+      "style": {
+        "name": "Animation Style",
+        "linear": "Style 1",
+        "bounceOut": "Style 2",
+        "elasticOut": "Style 3"
+      },
+      "number": "Display Quantity",
+      "time": "Animation Interval",
+      "duration": "Animation Duration"
+    },
+    "category": {
+      "name": "Category Axis",
+      "showLabel": "Show Label",
+      "axisWidth": "Axis Width",
+      "labelPositionX": "Label Position X",
+      "labelPositionY": "Label Position Y",
+      "labelRotation": "Rotation Degrees",
+      "showCategoryName": "Show Category Name",
+      "categoryLength": "Category Newline Characters",
+      "showPercent": "Show Percentage",
+      "percentFormat": "Percent Format",
+      "displayPolicy": {
+        "name": "Display Policy",
+        "lineFeed": "Line Break",
+        "ellipsis": "Ellipsis",
+        "none": "None"
+      }
+    },
+    "showActual": "Show Actual Value",
+    "showContrast": "Show Contrast Value",
+    "unit": {
+      "actual": "Actual Value Unit",
+      "contrast": "Contrast Value Unit",
+      "auto": "Auto",
+      "1": "None",
+      "100": "Hundred",
+      "1000": "Thousand",
+      "10000": "Ten Thousand",
+      "100000": "Hundred Thousand",
+      "1000000": "Million",
+      "10000000": "Ten Million",
+      "100000000": "Hundred Million",
+      "1000000000": "Billion"
+    },
+    "fontSetting": "Font Setting",
+    "dataLabel": {
+      "name": "Data Label",
+      "showLabel": "Show Label",
+      "showPercent": "Show Percentage",
+      "percentFormat": "Percent Format"
+    },
+    "dataRanking": {
+      "name": "Data Ranking",
+      "showRanking": "Show Ranking",
+      "positionX": "Ranking Position X",
+      "positionY": "Ranking position Y",
+      "shape": {
+        "name": "Background Shape",
+        "circular": "Circular",
+        "square": "Square",
+        "custom": "Custom Image",
+        "none": "None"
+      },
+      "image": "Background Image",
+      "color": "Background Color",
+      "spacing": "Background Spacing",
+      "sizeX": "Background Width",
+      "sizeY": "Background Height",
+      "size": "Background Size",
+      "customRanking": {
+        "name": "Custom Ranking",
+        "style": "Custom Ranking Style",
+        "conditionValue": "Ranking Value",
+        "replaceValue": "Display Value",
+        "fontColor": "Font Color",
+        "color": "Background Color",
+        "image": "Background Image",
+        "startColor": "Bar Start Color",
+        "endColor": "Bar End Color"
+      }
+    },
+    "clickAction": {
+      "name": "Click Action",
+      "none": "None",
+      "showToolTip": "Show Tooltip",
+      "keep": "Keep",
+      "exclude": "Exclude",
+      "drill": "Drill Down",
+      "jump": "Jump"
+    }
+  }
+}

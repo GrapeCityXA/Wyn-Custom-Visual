@@ -1,0 +1,75 @@
+{
+  "bingMap": "必应地图",
+  "key": "密钥",
+  "dataRoles": {
+    "longitude": "经度",
+    "latitude": "纬度",
+    "size": "大小",
+    "color": "颜色",
+    "values": "值",
+    "category": "类别",
+    "firstLevelLocationDivision": "国家区域",
+    "secondLevelLocationDivision": "省级区域",
+    "thirdLevelLocationDivision": "市级区域"
+  },
+  "templates": {
+    "collectionName": "图层",
+    "pushPinMapTemplate": "散点图层",
+    "heatMapTemplate": "热力图层",
+    "blockMapTemplate": "区块图层"
+  },
+  "chartType": {
+    "name": "类型",
+    "scatter": "散点图",
+    "heat": "热力图",
+    "block": "区块图"
+  },
+  "mapType": {
+    "name": "地图类型",
+    "road": "道路",
+    "canvasDark": "深色画布",
+    "grayscale": "灰度",
+    "aerial": "航测图",
+    "birdseye": "鸟瞰图",
+    "streetside": "街景视图"
+  },
+  "colorStyle": {
+    "name": "色彩样式",
+    "maintainColorAssignments": "保持颜色分配",
+    "palette": "调色板"
+  },
+  "hoverAct": "鼠标浮动展示标签",
+  "pinOptions": {
+    "name": "散点图属性",
+    "maxRadius": "散点最大半径",
+    "colorPreference": {
+      "name": "颜色偏好",
+      "palette": "调色板",
+      "gradient": "渐变"
+    },
+    "baseColor": "填充颜色",
+    "gradientPreference": {
+      "name": "渐变偏好",
+      "gradual": "平滑渐变",
+      "grouped": "分组渐变"
+    },
+    "rangeCount": "分组个数",
+    "showSizeLegend": "显示散点大小图例",
+    "showDataLabel": "显示散点值",
+    "tooltip": "工具提示",
+    "tooltipContentSetting": "设置..."
+  },
+  "heatOptions": {
+    "name": "热力图属性",
+    "step": "阶",
+    "radius": "影响半径",
+    "unit": "半径单位",
+    "pixels": "像素",
+    "meters": "米"
+  },
+  "blockOptions": {
+    "name": "区块图属性",
+    "locType": "区域类型"
+  },
+  "null": "[空值]"
+}

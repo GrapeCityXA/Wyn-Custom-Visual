@@ -1,0 +1,391 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "values",
+                "displayNameKey": "data.values",
+                "kind": "value",
+                "itemOptions" : [
+                    {
+                        "name" : "format",
+                        "displayNameKey" : "data.format",
+                        "type" : "format"
+                    },
+                    {
+                        "name" : "unit",
+                        "displayNameKey" : "data.displayUnit",
+                        "type" : "displayUnit"
+                    }
+                ]
+            }, {
+                "name": "category",
+                "displayNameKey": "data.category",
+                "kind": "grouping"
+            }, {
+                "name": "properties",
+                "displayNameKey": "data.properties",
+                "kind": "attributeOrValue",
+                "itemOptions" : [
+                    {
+                        "name" : "format",
+                        "displayNameKey" : "data.format",
+                        "type" : "format"
+                    },
+                    {
+                        "name" : "unit",
+                        "displayNameKey" : "data.displayUnit",
+                        "type" : "displayUnit"
+                    }
+                ]
+            }, {
+                "name": "conditionalFormatValues",
+                "kind": "value",
+                "hidden": true
+            }
+        ],
+        "dataViewMappings": [{
+            "plain": {
+                "required": [{
+                    "category": { "min": 1 },
+                    "values": { "min": 1 }
+                }, {
+                    "category": { "min": 1 },
+                    "properties": { "min": 1 }
+                }]
+            }
+        }],
+        "conditions": [{
+            "category": { "max": 1 }
+        }],
+        "conversionRules": {
+            "in": [{
+                "mode": "pre",
+                "execute": [{
+                    "source": "tooltip",
+                    "target": "properties",
+                    "cmd": "all"
+                }]
+            }],
+            "out": [{
+                "mode": "pre",
+                "execute": [{
+                    "source": "properties",
+                    "target": "tooltip",
+                    "cmd": "all"
+                }]
+            }]
+        }
+    },
+    "options": {
+        "visual": [{
+            "properties": [{
+                "name": "conditionalFormat",
+                "defaultValue": [],
+                "type": "_ConditionalFormat",
+                "hidden" : true
+            }, {
+                "name": "modelUrl",
+                "defaultValue": "",
+                "hidden": true
+            }, {
+                "name": "animations",
+                "defaultValue": "",
+                "hidden": true
+            }]
+        }, {
+            "displayNameKey": "defaultCamera",
+            "properties": [{
+                "name": "defaultCameraX",
+                "displayNameKey": "defaultCameraX",
+                "type": "Float"
+            }, {
+                "name": "defaultCameraY",
+                "displayNameKey": "defaultCameraY",
+                "type": "Float"
+            }, {
+                "name": "defaultCameraZ",
+                "displayNameKey": "defaultCameraZ",
+                "type": "Float"
+            }, {
+                "name": "defaultTargetX",
+                "displayNameKey": "defaultTargetX",
+                "type": "Float"
+            }, {
+                "name": "defaultTargetY",
+                "displayNameKey": "defaultTargetY",
+                "type": "Float"
+            }, {
+                "name": "defaultTargetZ",
+                "displayNameKey": "defaultTargetZ",
+                "type": "Float"
+            }]
+        }, {
+            "displayNameKey": "loop",
+            "properties": [{
+                "name": "loopSwitch",
+                "displayNameKey": "loopSwitch",
+                "defaultValue": false,
+                "type": "Boolean"
+            }, {
+                "name": "cameraFollow",
+                "displayNameKey": "defaultCameraFollow",
+                "defaultValue": true,
+                "type": "Boolean"
+            }, {
+                "name": "loopTime",
+                "displayNameKey": "loopTime",
+                "defaultValue": 5,
+                "type": "Float"
+            }]
+        }, {
+            "displayNameKey": "conditionFormat",
+            "properties": [{
+                "name" : "onlyShowOnFocusRoom",
+                "displayNameKey": "onlyShowOnFocus",
+                "defaultValue": false,
+                "type": "Boolean"
+            }]
+        }, {
+            "displayNameKey" : "dataTip.display",
+            "properties" : [
+                {
+                    "name" : "horizontalPosition",
+                    "type" : "Enum",
+                    "displayNameKey": "dataTip.horizontalPosition",
+                    "defaultValue" : "LEFT",
+                    "items" : [
+                        {
+                            "value" : "LEFT",
+                            "displayNameKey" : "dataTip.Left"
+                        }, {
+                            "value" : "MID",
+                            "displayNameKey" : "dataTip.Mid"
+                        }, {
+                            "value" : "RIGHT",
+                            "displayNameKey" : "dataTip.Right"
+                        }
+                    ]
+                }, {
+                    "name" : "verticalPosition",
+                    "type" : "Enum",
+                    "displayNameKey": "dataTip.verticalPosition",
+                    "defaultValue" : "TOP",
+                    "items" : [
+                        {
+                            "value" : "TOP",
+                            "displayNameKey" : "dataTip.Top"
+                        }, {
+                            "value" : "MID",
+                            "displayNameKey" : "dataTip.Mid"
+                        }, {
+                            "value" : "BOTTOM",
+                            "displayNameKey" : "dataTip.Bottom"
+                        }
+                    ]
+                }, {
+                    "name": "dataTipLeft",
+                    "displayNameKey": "dataTip.dataTipLeft",
+                    "defaultValue": 0,
+                    "type": "Integer"
+                }, {
+                    "name": "dataTipTop",
+                    "displayNameKey": "dataTip.dataTipTop",
+                    "defaultValue": 0,
+                    "type": "Integer"
+                }, {
+                    "name" : "dataTipBodyTextStyle",
+                    "displayNameKey": "dataTip.bodyTextStyle",
+                    "type" : "TextStyle",
+                    "defaultValue" : {
+                        "fontFamily": "微软雅黑",
+                        "fontWeight": "Normal",
+                        "fontSize" : "10pt",
+                        "fontStyle": "Normal",
+                        "color": "#ffffff"
+                    }
+                }, {
+                    "name": "dataTipBgColor",
+                    "type": "Color",
+                    "resetType" : "none",
+                    "displayNameKey": "dataTip.bgColor",
+                    "defaultValue" : "#1A237E9E"
+                }, {
+                    "name": "dataTipBgImg",
+                    "displayNameKey": "dataTip.bgImg",
+                    "type": "Image"
+                }
+            ]
+        }, {
+            "displayNameKey" : "dataLabel.display",
+            "properties" : [
+                {
+                    "name" : "showDataLabel",
+                    "type" : "Boolean",
+                    "displayNameKey": "dataLabel.showDataLabel",
+                    "defaultValue" : false
+                }, {
+                    "name" : "dataLabelShowValue",
+                    "type" : "Boolean",
+                    "displayNameKey": "dataLabel.showValue",
+                    "defaultValue" : false
+                }, {
+                    "name" : "dataLabelShowRoomId",
+                    "type" : "Boolean",
+                    "displayNameKey": "dataLabel.showRoomId",
+                    "defaultValue" : true
+                }, {
+                    "name" : "dataLabelShowColumnName",
+                    "type" : "Boolean",
+                    "displayNameKey": "dataLabel.showColumnName",
+                    "defaultValue" : false
+                }, {
+                    "name" : "dataLabelDelimiter",
+                    "type" : "Text",
+                    "displayNameKey": "dataLabel.delimiter",
+                    "defaultValue" : " : "
+                }, {
+                    "name" : "dataLabelHorizontalPosition",
+                    "type" : "Enum",
+                    "displayNameKey": "dataLabel.horizontalPosition",
+                    "defaultValue" : "MID",
+                    "items" : [
+                        {
+                            "value" : "LEFT",
+                            "displayNameKey" : "dataLabel.Left"
+                        }, {
+                            "value" : "MID",
+                            "displayNameKey" : "dataLabel.Mid"
+                        }, {
+                            "value" : "RIGHT",
+                            "displayNameKey" : "dataLabel.Right"
+                        }
+                    ]
+                }, {
+                    "name" : "dataLabelVerticalPosition",
+                    "type" : "Enum",
+                    "displayNameKey": "dataLabel.verticalPosition",
+                    "defaultValue" : "TOP",
+                    "items" : [
+                        {
+                            "value" : "TOP",
+                            "displayNameKey" : "dataLabel.Top"
+                        }, {
+                            "value" : "MID",
+                            "displayNameKey" : "dataLabel.Mid"
+                        }, {
+                            "value" : "BOTTOM",
+                            "displayNameKey" : "dataLabel.Bottom"
+                        }
+                    ]
+                }, {
+                    "name": "dataLabelOffsetLeft",
+                    "displayNameKey": "dataLabel.horizontalOffset",
+                    "defaultValue": 0,
+                    "type": "Integer"
+                }, {
+                    "name": "dataLabelOffsetTop",
+                    "displayNameKey": "dataLabel.verticalOffset",
+                    "defaultValue": 0,
+                    "type": "Integer"
+                }, {
+                    "name" : "dataLabelTextStyle",
+                    "displayNameKey": "dataLabel.textStyle",
+                    "type" : "TextStyle",
+                    "defaultValue" : {
+                        "fontFamily": "微软雅黑",
+                        "fontWeight": "Normal",
+                        "fontSize" : "10pt",
+                        "fontStyle": "Normal",
+                        "color": "#ffffff"
+                    }
+                }, {
+                    "name" : "dataLabelPadding",
+                    "displayNameKey": "dataLabel.padding",
+                    "type" : "Position",
+                    "defaultValue" : {
+                        "top" : 10,
+                        "right" : 10,
+                        "bottom" : 10,
+                        "left" : 10
+                    }
+                }, {
+                    "name" : "dataLabelBorderWidth",
+                    "displayNameKey": "dataLabel.border",
+                    "type" : "Integer",
+                    "defaultValue" : 2,
+                    "min" : 0
+                }, {
+                    "name" : "dataLabelBorderColor",
+                    "displayNameKey": "dataLabel.borderColor",
+                    "type" : "Color",
+                    "defaultValue" : "#8C9EFF"
+                }, {
+                    "name" : "dataLabelBackgroundColor",
+                    "displayNameKey": "dataLabel.backgroundColor",
+                    "type" : "Color",
+                    "defaultValue" : "#1A237E9E"
+                }, {
+                    "name" : "dataLabelBackgroundImage",
+                    "displayNameKey": "dataLabel.backgroundImage",
+                    "type" : "Image"
+                }
+            ]
+        }, {
+            "type": "interaction"
+        }, {
+            "type": "title"
+        }, {
+            "type": "appearance"
+        }]
+    },
+    "actions": [{
+        "type": "clearSelection"
+    }, {
+        "type": "edit"
+    }, {
+        "type": "focus"
+    }, {
+        "type": "annotation"
+    }, {
+        "type": "export"
+    }, {
+        "type": "filter"
+    }, {
+        "type": "sort"
+    }, {
+        "type": "rank"
+    }, {
+        "type": "convertVisual"
+    }, {
+        "type": "extension",
+        "name": "conditionalFormat",
+        "displayNameKey": "conditionFormat",
+        "path": "conditionalFormat",
+        "extensionType": "_conditionalFormat",
+        "iconCss": "icon-conditional-format",
+        "dataRole": "conditionalFormatValues"
+    }, {
+        "type": "shareScenario"
+    }, {
+        "type": "event",
+        "name": "importModel",
+        "horizontal":true,
+        "displayNameKey": "event.importModel",
+        "iconCss": "mdi mdi-package-variant-closed"
+    }, {
+        "type": "event",
+        "name": "animationSettings",
+        "horizontal":true,
+        "displayNameKey": "event.animationSettings",
+        "iconCss": "mdi mdi-animation-play"
+    }, {
+        "type": "event",
+        "name": "setDefaultCamera",
+        "horizontal":true,
+        "displayNameKey": "event.setDefaultCamera",
+        "iconCss": "mdi mdi-cctv"
+    }, {
+        "type": "saveAsTemplate"
+    }],
+    "analysis": []
+}

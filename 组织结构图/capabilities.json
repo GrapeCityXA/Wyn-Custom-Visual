@@ -1,0 +1,284 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "name",
+                "displayNameKey": "dataBinding.name",
+                "kind": "grouping"
+            },
+            {
+                "name": "parentName",
+                "displayNameKey": "dataBinding.parentName",
+                "kind": "grouping"
+            },
+            {
+                "name": "color",
+                "displayNameKey": "dataBinding.color",
+                "kind": "grouping"
+            },
+            {
+                "name": "title",
+                "displayNameKey": "dataBinding.title",
+                "kind": "grouping"
+            },
+            {
+                "name": "image",
+                "displayNameKey": "dataBinding.image",
+                "_imageFormat": true,
+                "kind": "grouping"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "name": {
+                                "min": 1
+                            },
+                            "parentName": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "name": {
+                    "max": 1
+                },
+                "parentName": {
+                    "max": 1
+                },
+                "color": {
+                    "max": 1
+                },
+                "title": {
+                    "max": 1
+                },
+                "image": {
+                    "max": 1
+                }
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayNameKey": "options.chartStyle",
+                "properties": [
+                    {
+                        "name": "maintainColorAssignment",
+                        "type": "ColorAssignment",
+                        "displayNameKey": "options.maintainColorAssignment",
+                        "defaultValue": false,
+                        "palettePath": "nodeColor"
+                    },
+                    {
+                        "name": "nodeColor",
+                        "type": "Palette",
+                        "displayNameKey": "options.nodeColor",
+                        "defaultValue": "dashboard.palette"
+                    },
+                    {
+                        "name": "opacity",
+                        "type": "Percentage",
+                        "displayNameKey": "options.opacity",
+                        "defaultValue": 80
+                    },
+                    {
+                        "name": "edgeColor",
+                        "type": "Color",
+                        "displayNameKey": "options.edgeColor",
+                        "defaultValue": "#999999"
+                    },
+                    {
+                        "name": "graphLayout",
+                        "type": "Enum",
+                        "displayNameKey": "options.graphLayout",
+                        "items": [
+                            {
+                                "value": "TB",
+                                "displayNameKey": "options.TB"
+                            },
+                            {
+                                "value": "BT",
+                                "displayNameKey": "options.BT"
+                            },
+                            {
+                                "value": "LR",
+                                "displayNameKey": "options.LR"
+                            },
+                            {
+                                "value": "RL",
+                                "displayNameKey": "options.RL"
+                            }
+                        ],
+                        "defaultValue": "TB"
+                    },
+                    {
+                        "name": "nodeAspectRatio",
+                        "type": "Float",
+                        "displayNameKey": "options.nodeAspectRatio",
+                        "min": 0,
+                        "defaultValue": 2
+                    },
+                    {
+                        "name": "imageNodeWidth",
+                        "type": "Percentage",
+                        "displayNameKey": "options.imageNodeWidth",
+                        "min": 0,
+                        "max": 50,
+                        "defaultValue": 25
+                    },
+                    {
+                        "name": "imageAspectRatio",
+                        "type": "Float",
+                        "displayNameKey": "options.imageAspectRatio",
+                        "min": 0,
+                        "defaultValue": 1
+                    },
+                    {
+                        "name": "horizontalSpacing",
+                        "type": "Float",
+                        "displayNameKey": "options.horizontalSpacing",
+                        "min": 0,
+                        "defaultValue": 0.2
+                    },
+                    {
+                        "name": "verticalSpacing",
+                        "type": "Float",
+                        "displayNameKey": "options.verticalSpacing",
+                        "min": 0,
+                        "defaultValue": 1
+                    },
+                    {
+                        "name": "radius",
+                        "type": "Angle",
+                        "displayNameKey": "options.radius",
+                        "min": 0,
+                        "max": 30,
+                        "defaultValue": 6
+                    },
+                    {
+                        "name": "buttonSize",
+                        "type": "Enum",
+                        "displayNameKey": "options.buttonSize",
+                        "items": [
+                            {
+                                "value": "large",
+                                "displayNameKey": "options.large"
+                            },
+                            {
+                                "value": "medium",
+                                "displayNameKey": "options.medium"
+                            },
+                            {
+                                "value": "small",
+                                "displayNameKey": "options.small"
+                            }
+                        ],
+                        "defaultValue": "medium"
+                    },
+                    {
+                        "name": "showTooltip",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showTooltip",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "nameAlignment",
+                        "type": "Enum",
+                        "displayNameKey": "options.nameAlignment.title",
+                        "defaultValue": "right",
+                        "items": [
+                            { "value": "left", "displayNameKey": "options.nameAlignment.left" },
+                            { "value": "center", "displayNameKey": "options.nameAlignment.center" },
+                            { "value": "right", "displayNameKey": "options.nameAlignment.right" }
+                        ]
+                    },
+                    {
+                        "name": "nameTextStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "options.nameTextStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true
+                    },
+                    {
+                        "name": "titleAlignment",
+                        "type": "Enum",
+                        "displayNameKey": "options.titleAlignment.title",
+                        "defaultValue": "right",
+                        "items": [
+                            { "value": "left", "displayNameKey": "options.titleAlignment.left" },
+                            { "value": "center", "displayNameKey": "options.titleAlignment.center" },
+                            { "value": "right", "displayNameKey": "options.titleAlignment.right" }
+                        ]
+                    },
+                    {
+                        "name": "titleBaseline",
+                        "type": "Enum",
+                        "displayNameKey": "options.titleBaseline.title",
+                        "defaultValue": "bottom",
+                        "items": [
+                            { "value": "top", "displayNameKey": "options.titleBaseline.top" },
+                            { "value": "middle", "displayNameKey": "options.titleBaseline.middle" },
+                            { "value": "bottom", "displayNameKey": "options.titleBaseline.bottom" }
+                        ]
+                    },
+                    {
+                        "name": "titleTextStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "options.titleTextStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true
+                    }
+                ]
+            },
+            {
+                "type": "interaction",
+                "disable": {
+                    "contextMenuActions": true
+                }
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "clearSelection"
+        },
+        {
+            "type": "focus"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "shareScenario"
+        },
+        {
+            "type": "openFullDashboard"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "analysisPath"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

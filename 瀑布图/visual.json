@@ -1,0 +1,18 @@
+{
+    "name": "瀑布图",
+    "displayName": "瀑布图",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": ["echarts", "lodash"],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "id": "81283630-b93a-11eb-9222-9b4d179daba4",
+    "cliVersion": "6.0.0"
+}

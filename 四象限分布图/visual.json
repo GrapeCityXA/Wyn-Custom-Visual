@@ -1,0 +1,17 @@
+{
+    "name": "Quadrant Type Scatter Plot",
+    "displayName": "Quadrant Type Scatter Plot",
+    "displayNameKey": "quadrantTypeScatterPlot",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "cliVersion": "5.0.0",
+    "id": "8ba619c0-bd3f-11eb-bf4a-575e61450ebe"
+}

@@ -1,0 +1,198 @@
+{
+  "dataBinding": {
+    "dataRoles": [
+      {
+        "name": "image",
+        "displayName": "图片",
+        "kind": "grouping"
+      },
+      {
+        "name": "imageDescription",
+        "displayName": "图片说明",
+        "kind": "grouping"
+      }
+    ],
+    "dataViewMappings": [
+      {
+        "plain": {
+          "required": [
+            {
+              "image": {
+                "min": 1
+              },
+              "imageDescription": {
+                "min": 1
+              }
+            },
+            {
+              "image": {
+                "min": 1
+              },
+              "imageDescription": {
+                "max": 0
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "conditions": [
+      {
+        "image": {
+          "max": 1
+        },
+        "imageDescription": {
+          "max": 1
+        }
+      }
+    ]
+  },
+  "options": {
+    "visual": [
+      {
+        "displayName": "图表样式",
+        "properties": [
+          {
+            "name": "useButton",
+            "type": "Boolean",
+            "displayName": "是否启用翻页按钮",
+            "defaultValue": false
+          },
+          {
+            "name": "usetoggle",
+            "type": "Boolean",
+            "displayName": "是否启用切换图标",
+            "defaultValue": true
+          },
+          {
+            "name": "autoPlay",
+            "type": "Boolean",
+            "displayName": "是否开启自动轮播",
+            "defaultValue": true
+          },
+          {
+            "displayName": "自动轮播间隔(毫秒)",
+            "name": "delay",
+            "type": "Integer",
+            "min": 100,
+            "defaultValue": 2000
+          },
+          {
+            "name": "effect",
+            "type": "Enum",
+            "displayName": "切换动效",
+            "items": [
+              {
+                "value": "fade",
+                "displayName": "渐变"
+              },
+              {
+                "value": "coverflow",
+                "displayName": "3D滚动"
+              },
+              {
+                "value": "cube",
+                "displayName": "3D方块"
+              },
+              {
+                "value": "flip",
+                "displayName": "3D反转"
+              }
+            ],
+            "defaultValue": "cube"
+          },
+          {
+            "displayName": "切换动效速度",
+            "name": "speed",
+            "type": "Integer",
+            "min": 100,
+            "defaultValue": 2000
+          },
+          {
+            "name": "imageDescriptionPosition",
+            "type": "Enum",
+            "displayName": "图片说明位置",
+            "items": [
+              {
+                "value": "top",
+                "displayName": "顶部"
+              },
+              {
+                "value": "bottom",
+                "displayName": "底部"
+              }
+            ],
+            "defaultValue": "底部"
+          },
+          {
+            "name": "imageDescSetting",
+            "type": "TextStyle",
+            "displayName": "字体设置",
+            "inheritFrom": "dashboard.textStyle",
+            "defaultValue": {
+              "fontSize": "14px"
+            }
+          }
+        ]
+      },
+      {
+        "type": "title"
+      },
+      {
+        "type": "interaction",
+        "properties": [
+          {
+            "name": "clickLeftMouse",
+            "type": "Enum",
+            "displayName": "鼠标左键选项",
+            "items": [
+              {
+                "value": "none",
+                "displayName": "无"
+              },
+              {
+                "value": "showToolTip",
+                "displayName": "显示工具提示"
+              },
+              {
+                "value": "Keep",
+                "displayName": "保留"
+              },
+              {
+                "value": "Exclude",
+                "displayName": "排除"
+              },
+              {
+                "value": "Drill",
+                "displayName": "钻取"
+              },
+              {
+                "value": "Jump",
+                "displayName": "跳转"
+              }
+            ],
+            "defaultValue": "none"
+          }
+        ]
+      },
+      {
+        "type": "appearance"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "type": "focus"
+    },
+    {
+      "type": "annotation"
+    },
+    {
+      "type": "export"
+    },
+    {
+      "type": "saveAsTemplate"
+    }
+  ],
+  "analysis": []
+}

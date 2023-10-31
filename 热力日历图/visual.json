@@ -1,0 +1,18 @@
+{
+    "name": "热力日历图",
+    "displayName": "热力日历图",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": ["echarts", "lodash"],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "id": "7e4e3b30-b93a-11eb-8375-d95f1d6c2e4f",
+    "cliVersion": "6.0.0"
+}

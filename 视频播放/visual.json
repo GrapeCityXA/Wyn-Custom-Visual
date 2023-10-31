@@ -1,0 +1,18 @@
+{
+    "name": "视频播放",
+    "version": "0.0.1",
+    "displayName": "视频播放",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "id": "87f0f790-b93a-11eb-bdfc-8f2284c37582",
+    "cliVersion": "6.0.0"
+}

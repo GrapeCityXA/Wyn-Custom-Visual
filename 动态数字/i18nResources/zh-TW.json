@@ -1,0 +1,32 @@
+{
+  "animationNumber": "動態數字",
+  "dataBinding": {
+    "actualValue": "數值"
+  },
+  "property": {
+    "chartStyle": "圖表樣式",
+    "animationMode": {
+      "name": "動畫模式",
+      "slide": "幻燈片",
+      "flip": "翻轉"
+    },
+    "animationDuration": "動畫時長",
+    "decimalLength": "小數位控制位",
+    "integerType": {
+      "name": "整數位控制位",
+      "auto": "自動",
+      "manual": "手動"
+    },
+    "integerLength": "整數位數",
+    "showThousandSign": "顯示千分符",
+    "backgroundColor": "背景色",
+    "gradientBackgroundColor": "漸變修飾色",
+    "gradientType": {
+      "name": "漸變方式",
+      "null": "無",
+      "center": "中間",
+      "topToBottom": "兩端"
+    },
+    "fontSetting": "字型設定"
+  }
+}

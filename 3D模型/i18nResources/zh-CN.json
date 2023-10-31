@@ -1,0 +1,110 @@
+{
+  "visualName" : "3D模型",
+  "data": {
+    "category": "区域标识",
+    "values": "数值",
+    "properties": "属性",
+    "format" : "格式",
+    "displayUnit" : "显示单位"
+  },
+  "event": {
+    "importModel": "模型导入",
+    "animationSettings" : "动画设置",
+    "setDefaultCamera" : "设置默认相机"
+  },
+  "background": "背景",
+  "defaultCamera": "默认相机位置",
+  "defaultCameraX": "默认相机位置 X",
+  "defaultCameraY": "默认相机位置 Y",
+  "defaultCameraZ": "默认相机位置 Z",
+  "defaultTargetX": "默认相机焦点 X",
+  "defaultTargetY": "默认相机焦点 Y",
+  "defaultTargetZ": "默认相机焦点 Z",
+  "loop": "轮播",
+  "loopSwitch": "自动轮播",
+  "defaultCameraFollow":"相机跟随",
+  "loopTime": "轮播间隔",
+  "conditionFormat" : "条件格式化",
+  "onlyShowOnFocus" : "仅显示在聚焦区域",
+
+  "dataTip" : {
+    "display" : "数据提示",
+    "horizontalPosition" : "水平位置",
+    "Left" : "左",
+    "Mid" : "中",
+    "Right" : "右",
+    "verticalPosition" : "垂直位置",
+    "Top" : "上",
+    "Bottom" : "下",
+    "dataTipTop" : "垂直偏移",
+    "dataTipLeft" : "水平偏移",
+    "bodyTextStyle" : "字体设置",
+    "bgColor" : "背景颜色",
+    "bgImg" : "背景图片"
+  },
+
+  "dataLabel" : {
+    "display" : "数据标签",
+    "showDataLabel" : "显示提示标签",
+    "showValue" : "显示数据",
+    "showRoomId" : "显示区域标识",
+    "showColumnName" : "显示列名",
+    "textStyle" : "字体设置",
+    "delimiter" : "分隔符",
+    "border" : "边框宽度",
+    "padding" : "内边距",
+    "borderColor" : "边框颜色",
+    "backgroundColor" : "背景颜色",
+    "backgroundImage" : "背景图片",
+
+    "horizontalPosition" : "水平位置",
+    "Left" : "左",
+    "Mid" : "中",
+    "Right" : "右",
+    "verticalPosition" : "垂直位置",
+    "Top" : "上",
+    "Bottom" : "下",
+    "verticalOffset" : "水平偏移",
+    "horizontalOffset" : "垂直偏移"
+  },
+
+  "apply" : "应用",
+  "cancel" : "取消",
+  "room" : "区域",
+
+  "window" : {
+    "importModel" : {
+      "title" : "选择模型"
+    },
+    "cameraList" : {
+      "title" : "区域列表",
+      "default" : "默认相机"
+    },
+    "loopFocus" : {
+      "cameraFollowing" : "相机跟随"
+    },
+    "animationSettings" : {
+      "title" : "配置动画",
+      "tipWhenNoAnimation" : "模型中没有动画",
+      "selectOpeningAnimation" : "选择开场动画",
+      "none" : "无",
+      "openingStopWhere" : "开场动画停在哪一帧 ？",
+      "stopAtFirstFrame" : "停在第一帧",
+      "stopAtLastFrame" : "停在最后一帧",
+      
+      "selectLoopingAnimations" : "选择循环动画",
+      "whenLoopingAnimationStart" : "循环动画什么时候开始播放 ?",
+      "atTheSameTimeWithOpening" : "与开场动画同时播放",
+      "afterTheOpeningAnimationEnds" : "开场动画结束后再开始播放",
+      "loopMode" : "循环模式",
+      "repeat" : "重复",
+      "pingPong" : "往复",
+      "once" : "仅一次"
+    },
+    "loadingTip" : {
+      "pleaseLoadModel" : "请加载模型",
+      "loadingModel" : "正在加载模型...",
+      "loadingError" : "加载错误！请确认文件是否正确或者是否有权限"
+    }
+  }
+}

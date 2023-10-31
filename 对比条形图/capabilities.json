@@ -1,0 +1,974 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "ActualValue",
+                "displayNameKey": "dataBinding.actualValue",
+                "kind": "value",
+                "options": [
+                    {
+                        "displayNameKey": "dataBinding.dataFormat",
+                        "type": "format",
+                        "name": "valueFormat"
+                    }
+                ]
+            },
+            {
+                "name": "ContrastValue",
+                "displayNameKey": "dataBinding.contrastValue",
+                "kind": "value",
+                "options": [
+                    {
+                        "displayNameKey": "dataBinding.dataFormat",
+                        "type": "format",
+                        "name": "valueFormat"
+                    }
+                ]
+            },
+            {
+                "name": "compareCol",
+                "displayNameKey": "dataBinding.compareCol",
+                "kind": "value"
+            },
+            {
+                "name": "dimension",
+                "displayNameKey": "dataBinding.dimension",
+                "kind": "grouping"
+            },
+            {
+                "name": "tooltipFields",
+                "displayNameKey": "dataBinding.tooltip",
+                "kind": "attributeOrValue"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "ActualValue": {
+                                "min": 1
+                            },
+                            "ContrastValue": {
+                                "min": 0
+                            },
+                            "dimension": {
+                                "min": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "ActualValue": {
+                    "max": 1
+                },
+                "ContrastValue": {
+                    "max": 1
+                },
+                "dimension": {
+                    "max": 1
+                }
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayNameKey": "property.chartStyle",
+                "properties": [
+                    {
+                        "displayNameKey": "property.quickStyle.name",
+                        "name": "styleName",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "default",
+                                "displayNameKey": "property.quickStyle.default"
+                            },
+                            {
+                                "value": "style1",
+                                "displayNameKey": "property.quickStyle.style1"
+                            },
+                            {
+                                "value": "style2",
+                                "displayNameKey": "property.quickStyle.style2"
+                            },
+                            {
+                                "value": "style3",
+                                "displayNameKey": "property.quickStyle.style3"
+                            },
+                            {
+                                "value": "style4",
+                                "displayNameKey": "property.quickStyle.style4"
+                            }
+                        ],
+                        "defaultValue": "default"
+                    },
+                    {
+                        "name": "initStyleName",
+                        "type": "Hidden",
+                        "displayNameKey": "property.quickStyle.init",
+                        "defaultValue": "default"
+                    },
+                    {
+                        "name": "barWidth",
+                        "type": "Integer",
+                        "displayNameKey": "property.barWidth",
+                        "defaultValue": 18
+                    },
+                    {
+                        "name": "barWidthStyle",
+                        "type": "Integer",
+                        "displayNameKey": "property.barWidth",
+                        "defaultValue": 10
+                    },
+                    {
+                        "type": "Boolean",
+                        "name": "showBackground",
+                        "displayNameKey": "property.showBackground",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "barBackgroundColor",
+                        "type": "Color",
+                        "displayNameKey": "property.backgroundColor",
+                        "defaultValue": "#8e929a"
+                    },
+                    {
+                        "name": "greCompareCol",
+                        "type": "Color",
+                        "displayNameKey": "property.greCompareCol",
+                        "defaultValue": "#00ff5f"
+                    },
+                    {
+                        "name": "lesCompareCol",
+                        "type": "Color",
+                        "displayNameKey": "property.lesCompareCol",
+                        "defaultValue": "#ff0000"
+                    },
+                    {
+                        "name": "barEndcolor",
+                        "type": "Color",
+                        "displayNameKey": "property.barEndColor",
+                        "defaultValue": "#2563f9"
+                    },
+                    {
+                        "name": "inner",
+                        "type": "Percentage",
+                        "displayNameKey": "property.inner",
+                        "defaultValue": 60
+                    },
+                    {
+                        "name": "barStartColor",
+                        "type": "Color",
+                        "displayNameKey": "property.barStartColor",
+                        "defaultValue": "#57eabf"
+                    },
+                    {
+                        "displayNameKey": "property.sortAccording.name",
+                        "name": "sortAccording",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "accordingPercent",
+                                "displayNameKey": "property.sortAccording.percent"
+                            },
+                            {
+                                "value": "accordingActual",
+                                "displayNameKey": "property.sortAccording.actual"
+                            },
+                            {
+                                "value": "noOrder",
+                                "displayNameKey": "property.sortAccording.noOrder"
+                            }
+                        ],
+                        "defaultValue": "accordingPercent"
+                    },
+                    {
+                        "displayNameKey": "property.sortType.name",
+                        "name": "sorttype",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "asc",
+                                "displayNameKey": "property.sortType.asc"
+                            },
+                            {
+                                "value": "desc",
+                                "displayNameKey": "property.sortType.desc"
+                            }
+                        ],
+                        "defaultValue": "desc"
+                    },
+                    {
+                        "displayNameKey": "property.symbolType.name",
+                        "name": "barSymbolType",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "default",
+                                "displayNameKey": "property.symbolType.bar"
+                            },
+                            {
+                                "value": "circle",
+                                "displayNameKey": "property.symbolType.circle"
+                            },
+                            {
+                                "value": "rect",
+                                "displayNameKey": "property.symbolType.rect"
+                            },
+                            {
+                                "value": "roundRect",
+                                "displayNameKey": "property.symbolType.roundRect"
+                            },
+                            {
+                                "value": "triangle",
+                                "displayNameKey": "property.symbolType.triangle"
+                            },
+                            {
+                                "value": "diamond",
+                                "displayNameKey": "property.symbolType.diamond"
+                            },
+                            {
+                                "value": "pin",
+                                "displayNameKey": "property.symbolType.pin"
+                            },
+                            {
+                                "value": "arrow",
+                                "displayNameKey": "property.symbolType.arrow"
+                            },
+                            {
+                                "value": "custom",
+                                "displayNameKey": "property.symbolType.custom"
+                            }
+                        ],
+                        "defaultValue": "default"
+                    },
+                    {
+                        "name": "radiusLeftTop",
+                        "type": "Integer",
+                        "displayNameKey": "property.radius.leftTop",
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "radiusRightTop",
+                        "type": "Integer",
+                        "displayNameKey": "property.radius.rightTop",
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "radiusLeftDown",
+                        "type": "Integer",
+                        "displayNameKey": "property.radius.leftBottom",
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "radiusRightDown",
+                        "type": "Integer",
+                        "displayNameKey": "property.radius.rightBottom",
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "barSymbolImage",
+                        "type": "Image",
+                        "displayNameKey": "property.symbolImage.name"
+                    },
+                    {
+                        "name": "barSymbolSizeX",
+                        "type": "Integer",
+                        "displayNameKey": "property.symbolImage.sizeX",
+                        "defaultValue": 18,
+                        "min": 0
+                    },
+                    {
+                        "name": "barSymbolSizeY",
+                        "type": "Integer",
+                        "displayNameKey": "property.symbolImage.sizeY",
+                        "defaultValue": 18,
+                        "min": 0
+                    },
+                    {
+                        "name": "barSymbolMargin",
+                        "type": "Integer",
+                        "displayNameKey": "property.symbolImage.margin",
+                        "defaultValue": 3,
+                        "min": 0
+                    },
+                    {
+                        "name": "SymbolImage",
+                        "type": "Image",
+                        "displayNameKey": "property.symbolImage.endName",
+                        "defaultValue": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAMAAADWZboaAAAAZlBMVEUAAABe3uVe3+Vf3uVf3+Zf3uVg3+Zg3+Zf3+Vi4OZh4OZg3+Z86/Bh3+Zi4Odj4Odi4OZ86/B76/B86/Bj4ed56+9x5+xn4umB7/N87PB36e+A7/N+7fF/7vJ/7vJ+7fGA7/OB7/PReX+lAAAAIXRSTlMABQkVDREmIhk3MR10LEFFPHh7cUprXE35h2XnqMLAp+mHAG9cAAAB5ElEQVRIx83WjU7CMBQFYIoiKMqU/XUboHv/l/Tce7t2XamDNSacETEmX86tlK2rx4py150o+MstMBLwWRfHKo6JCVxLnvmFGBjFQ58oF1//sUZhGy/ClSTWObgnL4O+bkeN4nY2okfNMbkRt9/vtxz8InoTsWplJSCzFxPmO8+GpSIByX3YQAuGDWtRKhKjCnxDXhF6Z4yxnZ20Wgko7BMRDmxtSGVaI4kdTIgb+zTYoJQlIMlDlmUFgrcDWWC201qSayqlTkiCddWWeV62VU0YlnpRi9VOKaSUsiyq/N0krwq2Ugt7lVpZl5BfHNiytjagMi+XYp0kCR45hMlivVQrE/uU5pXSrCB5bM6d1t2lOZItMqmliT3q5uVxqxzyW/ccfYLNKx7ZTeykMvNyac2yt2Fbc61MHLSC0rwoxbiNdlQ3GBm1NLHQsHUrtEXppR/ljNpW6DbSCoqlFiVoN6YdaFlgsSFVPs1BdT8OaB5QyQzVcaqWDows/zepxR8ObLglTrdtCRVuRNj4Rrxh+//0ke2f8KVL+Kon3GCSbmsJN9OUW3j6g0Ns+LgCij2u0h+Sghc8mlMPBMgdx5DFh59VmOVHrvmDnoNxCz3J7MFWsMuaLyR089xz/xhlfijvwutR8gv3zk6BLUUeCgAAAABJRU5ErkJggg=="
+                    },
+                    {
+                        "name": "SymbolSizeX",
+                        "type": "Integer",
+                        "displayNameKey": "property.symbolImage.endSizeX",
+                        "defaultValue": 60,
+                        "min": 0
+                    },
+                    {
+                        "name": "SymbolSizeY",
+                        "type": "Integer",
+                        "displayNameKey": "property.symbolImage.endSizeY",
+                        "defaultValue": 60,
+                        "min": 0
+                    },
+                    {
+                        "name": "SymbolMargin",
+                        "type": "Integer",
+                        "displayNameKey": "property.symbolImage.endMargin",
+                        "defaultValue": 25,
+                        "min": 0
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.carousel.name",
+                "properties": [
+                    {
+                        "name": "animation",
+                        "type": "Boolean",
+                        "displayNameKey": "property.carousel.open",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "animationStyle",
+                        "type": "Enum",
+                        "displayNameKey": "property.carousel.style.name",
+                        "defaultValue": "linear",
+                        "items": [
+                            {
+                                "value": "linear",
+                                "displayNameKey": "property.carousel.style.linear"
+                            },
+                            {
+                                "value": "bounceOut",
+                                "displayNameKey": "property.carousel.style.bounceOut"
+                            },
+                            {
+                                "value": "elasticOut",
+                                "displayNameKey": "property.carousel.style.elasticOut"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "animationShowNumber",
+                        "type": "Integer",
+                        "displayNameKey": "property.carousel.number",
+                        "min": 1,
+                        "defaultValue": 2
+                    },
+                    {
+                        "name": "animationTime",
+                        "type": "Integer",
+                        "displayNameKey": "property.carousel.time",
+                        "min": 1,
+                        "defaultValue": 3
+                    },
+                    {
+                        "name": "animationDurationUpdate",
+                        "type": "Integer",
+                        "displayNameKey": "property.carousel.duration",
+                        "min": 1,
+                        "defaultValue": 1
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.category.name",
+                "properties": [
+                    {
+                        "name": "showBarLabel",
+                        "type": "Boolean",
+                        "displayNameKey": "property.category.showLabel",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "axisYWidth",
+                        "type": "Integer",
+                        "displayNameKey": "property.category.axisWidth",
+                        "defaultValue": 50,
+                        "min": 0
+                    },
+                    {
+                        "name": "firstBarPositionX",
+                        "type": "Integer",
+                        "displayNameKey": "property.category.labelPositionX",
+                        "defaultValue": 1
+                    },
+                    {
+                        "name": "firstBarPositionY",
+                        "type": "Integer",
+                        "displayNameKey": "property.category.labelPositionY",
+                        "defaultValue": -13
+                    },
+                    {
+                        "name": "rotationDegree",
+                        "type": "Integer",
+                        "displayNameKey": "property.category.labelRotation",
+                        "defaultValue": 0,
+                        "min": -90,
+                        "max": 90
+                    },
+                    {
+                        "name": "showFirstBarCategory",
+                        "type": "Boolean",
+                        "displayNameKey": "property.category.showCategoryName",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "categoryLen",
+                        "type": "Integer",
+                        "displayNameKey": "property.category.categoryLength",
+                        "defaultValue": 5
+                    },
+                    {
+                        "name": "showFirstBarPercent",
+                        "type": "Boolean",
+                        "displayNameKey": "property.category.showPercent",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showFirstPercentFormate",
+                        "type": "Integer",
+                        "displayNameKey": "property.category.percentFormat",
+                        "defaultValue": 2,
+                        "min": 0
+                    },
+                    {
+                        "name": "showFirstBarActual",
+                        "type": "Boolean",
+                        "displayNameKey": "property.showActual",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showFirstBarActualUnit",
+                        "type": "Enum",
+                        "displayNameKey": "property.unit.actual",
+                        "items": [
+                            {
+                                "value": "auto",
+                                "displayNameKey": "property.unit.auto"
+                            },
+                            {
+                                "value": "1",
+                                "displayNameKey": "property.unit.1"
+                            },
+                            {
+                                "value": "100",
+                                "displayNameKey": "property.unit.100"
+                            },
+                            {
+                                "value": "1000",
+                                "displayNameKey": "property.unit.1000"
+                            },
+                            {
+                                "value": "10000",
+                                "displayNameKey": "property.unit.10000"
+                            },
+                            {
+                                "value": "100000",
+                                "displayNameKey": "property.unit.100000"
+                            },
+                            {
+                                "value": "1000000",
+                                "displayNameKey": "property.unit.1000000"
+                            },
+                            {
+                                "value": "10000000",
+                                "displayNameKey": "property.unit.10000000"
+                            },
+                            {
+                                "value": "100000000",
+                                "displayNameKey": "property.unit.100000000"
+                            },
+                            {
+                                "value": "1000000000",
+                                "displayNameKey": "property.unit.1000000000"
+                            }
+                        ],
+                        "defaultValue": "auto"
+                    },
+                    {
+                        "name": "showFirstBarContrast",
+                        "type": "Boolean",
+                        "displayNameKey": "property.showContrast",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showFirstBarContrastUnit",
+                        "type": "Enum",
+                        "displayNameKey": "property.unit.contrast",
+                        "items": [
+                            {
+                                "value": "auto",
+                                "displayNameKey": "property.unit.auto"
+                            },
+                            {
+                                "value": "1",
+                                "displayNameKey": "property.unit.1"
+                            },
+                            {
+                                "value": "100",
+                                "displayNameKey": "property.unit.100"
+                            },
+                            {
+                                "value": "1000",
+                                "displayNameKey": "property.unit.1000"
+                            },
+                            {
+                                "value": "10000",
+                                "displayNameKey": "property.unit.10000"
+                            },
+                            {
+                                "value": "100000",
+                                "displayNameKey": "property.unit.100000"
+                            },
+                            {
+                                "value": "1000000",
+                                "displayNameKey": "property.unit.1000000"
+                            },
+                            {
+                                "value": "10000000",
+                                "displayNameKey": "property.unit.10000000"
+                            },
+                            {
+                                "value": "100000000",
+                                "displayNameKey": "property.unit.100000000"
+                            },
+                            {
+                                "value": "1000000000",
+                                "displayNameKey": "property.unit.1000000000"
+                            }
+                        ],
+                        "defaultValue": "auto"
+                    },
+                    {
+                        "displayNameKey": "property.category.displayPolicy.name",
+                        "name": "displayPolicy",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "lineFeed",
+                                "displayNameKey": "property.category.displayPolicy.lineFeed"
+                            },
+                            {
+                                "value": "ellipsis",
+                                "displayNameKey": "property.category.displayPolicy.ellipsis"
+                            },
+                            {
+                                "value": "none",
+                                "displayNameKey": "property.category.displayPolicy.none"
+                            }
+                        ],
+                        "defaultValue": "none"
+                    },
+                    {
+                        "name": "labelTextStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "property.fontSetting",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "fontSize": "1.0X"
+                        }
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.dataLabel.name",
+                "properties": [
+                    {
+                        "name": "showLabel",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showLabel",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showSecondBarPercent",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showPercent",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showSecondPercentFormate",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataLabel.percentFormat",
+                        "defaultValue": 2,
+                        "min": 0
+                    },
+                    {
+                        "name": "showSecondBarActual",
+                        "type": "Boolean",
+                        "displayNameKey": "property.showActual",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showSecondBarActualUnit",
+                        "type": "Enum",
+                        "displayNameKey": "property.unit.actual",
+                        "items": [
+                            {
+                                "value": "auto",
+                                "displayNameKey": "property.unit.auto"
+                            },
+                            {
+                                "value": "1",
+                                "displayNameKey": "property.unit.1"
+                            },
+                            {
+                                "value": "100",
+                                "displayNameKey": "property.unit.100"
+                            },
+                            {
+                                "value": "1000",
+                                "displayNameKey": "property.unit.1000"
+                            },
+                            {
+                                "value": "10000",
+                                "displayNameKey": "property.unit.10000"
+                            },
+                            {
+                                "value": "100000",
+                                "displayNameKey": "property.unit.100000"
+                            },
+                            {
+                                "value": "1000000",
+                                "displayNameKey": "property.unit.1000000"
+                            },
+                            {
+                                "value": "10000000",
+                                "displayNameKey": "property.unit.10000000"
+                            },
+                            {
+                                "value": "100000000",
+                                "displayNameKey": "property.unit.100000000"
+                            },
+                            {
+                                "value": "1000000000",
+                                "displayNameKey": "property.unit.1000000000"
+                            }
+                        ],
+                        "defaultValue": "auto"
+                    },
+                    {
+                        "name": "showSecondBarContrast",
+                        "type": "Boolean",
+                        "displayNameKey": "property.showContrast",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showSecondBarContrastUnit",
+                        "type": "Enum",
+                        "displayNameKey": "property.unit.contrast",
+                        "items": [
+                            {
+                                "value": "auto",
+                                "displayNameKey": "property.unit.auto"
+                            },
+                            {
+                                "value": "1",
+                                "displayNameKey": "property.unit.1"
+                            },
+                            {
+                                "value": "100",
+                                "displayNameKey": "property.unit.100"
+                            },
+                            {
+                                "value": "1000",
+                                "displayNameKey": "property.unit.1000"
+                            },
+                            {
+                                "value": "10000",
+                                "displayNameKey": "property.unit.10000"
+                            },
+                            {
+                                "value": "100000",
+                                "displayNameKey": "property.unit.100000"
+                            },
+                            {
+                                "value": "1000000",
+                                "displayNameKey": "property.unit.1000000"
+                            },
+                            {
+                                "value": "10000000",
+                                "displayNameKey": "property.unit.10000000"
+                            },
+                            {
+                                "value": "100000000",
+                                "displayNameKey": "property.unit.100000000"
+                            },
+                            {
+                                "value": "1000000000",
+                                "displayNameKey": "property.unit.1000000000"
+                            }
+                        ],
+                        "defaultValue": "auto"
+                    },
+                    {
+                        "name": "textStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "property.fontSetting",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "fontSize": "1.0X"
+                        }
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.dataRanking.name",
+                "properties": [
+                    {
+                        "name": "showRanking",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataRanking.showRanking",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "secondBarPositionX",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataRanking.positionX",
+                        "defaultValue": -42
+                    },
+                    {
+                        "name": "secondBarPositionY",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataRanking.positionY",
+                        "defaultValue": -7
+                    },
+                    {
+                        "displayNameKey": "property.dataRanking.shape.name",
+                        "name": "rankingShape",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "circular",
+                                "displayNameKey": "property.dataRanking.shape.circular"
+                            },
+                            {
+                                "value": "square",
+                                "displayNameKey": "property.dataRanking.shape.square"
+                            },
+                            {
+                                "value": "custom",
+                                "displayNameKey": "property.dataRanking.shape.custom"
+                            },
+                            {
+                                "value": "none",
+                                "displayNameKey": "property.dataRanking.shape.none"
+                            }
+                        ],
+                        "defaultValue": "circular"
+                    },
+                    {
+                        "name": "rankingBackgroundImage",
+                        "type": "Image",
+                        "displayNameKey": "property.dataRanking.image"
+                    },
+                    {
+                        "name": "rankingBackgroundColor",
+                        "type": "Color",
+                        "displayNameKey": "property.dataRanking.color",
+                        "defaultValue": "#444a58"
+                    },
+                    {
+                        "name": "rankingSize",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataRanking.spacing",
+                        "defaultValue": 8
+                    },
+                    {
+                        "name": "rankingSizeX",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataRanking.sizeX",
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "rankingSizeY",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataRanking.sizeY",
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "rankingSize",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataRanking.size",
+                        "defaultValue": 8
+                    },
+                    {
+                        "name": "rankingTextStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "property.fontSetting",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "fontSize": "1.0X"
+                        }
+                    },
+                    {
+                        "name": "showBackgroundColor",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataRanking.customRanking.name",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "rankingConditionCollection",
+                        "displayNameKey": "property.dataRanking.customRanking.style",
+                        "type": "Collection",
+                        "itemShape": [
+                            {
+                                "name": "rankingConditionValue",
+                                "displayNameKey": "property.dataRanking.customRanking.conditionValue",
+                                "type": "Text"
+                            },
+                            {
+                                "name": "rankingReplaceValue",
+                                "displayNameKey": "property.dataRanking.customRanking.replaceValue",
+                                "type": "Text"
+                            },
+                            {
+                                "name": "rankingFontColor",
+                                "displayNameKey": "property.dataRanking.customRanking.fontColor",
+                                "type": "Color"
+                            },
+                            {
+                                "name": "rankingConditionColor",
+                                "displayNameKey": "property.dataRanking.customRanking.color",
+                                "type": "Color"
+                            },
+                            {
+                                "name": "rankingConditionImage",
+                                "displayNameKey": "property.dataRanking.customRanking.image",
+                                "type": "Image"
+                            },
+                            {
+                                "name": "rankingStartConditionColor",
+                                "displayNameKey": "property.dataRanking.customRanking.startColor",
+                                "type": "Color"
+                            },
+                            {
+                                "name": "rankingEndConditionColor",
+                                "displayNameKey": "property.dataRanking.customRanking.endColor",
+                                "type": "Color"
+                            }
+                        ],
+                        "defaultValue": [
+                            {
+                                "rankingConditionValue": "1",
+                                "rankingReplaceValue": "1",
+                                "rankingFontColor": "",
+                                "rankingConditionColor": "#509dea",
+                                "rankingConditionImage": "",
+                                "rankingStartConditionColor": "#509dea",
+                                "rankingEndConditionColor": "#d3e7fa"
+                            },
+                            {
+                                "rankingConditionValue": "2",
+                                "rankingReplaceValue": "2",
+                                "rankingFontColor": "",
+                                "rankingConditionColor": "#08bc9b",
+                                "rankingConditionImage": "",
+                                "rankingStartConditionColor": "#08bc9b",
+                                "rankingEndConditionColor": "#c1eee6"
+                            },
+                            {
+                                "rankingConditionValue": "3",
+                                "rankingReplaceValue": "3",
+                                "rankingFontColor": "",
+                                "rankingConditionColor": "#bc7df2",
+                                "rankingConditionImage": "",
+                                "rankingStartConditionColor": "#8c7df2",
+                                "rankingEndConditionColor": "#e2dffc"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "interaction",
+                "properties": [
+                    {
+                        "name": "clickLeftMouse",
+                        "type": "Enum",
+                        "displayNameKey": "property.clickAction.name",
+                        "items": [
+                            {
+                                "value": "none",
+                                "displayNameKey": "property.clickAction.none"
+                            },
+                            {
+                                "value": "showToolTip",
+                                "displayNameKey": "property.clickAction.showToolTip"
+                            },
+                            {
+                                "value": "Keep",
+                                "displayNameKey": "property.clickAction.keep"
+                            },
+                            {
+                                "value": "Exclude",
+                                "displayNameKey": "property.clickAction.exclude"
+                            },
+                            {
+                                "value": "Drill",
+                                "displayNameKey": "property.clickAction.drill"
+                            },
+                            {
+                                "value": "Jump",
+                                "displayNameKey": "property.clickAction.jump"
+                            }
+                        ],
+                        "defaultValue": "none"
+                    }
+                ]
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "sort"
+        },
+        {
+            "type": "rank"
+        },
+        {
+            "type": "convertVisual"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": [
+        {
+            "type": "drill",
+            "rule": {
+                "roles": [
+                    "dimension"
+                ]
+            }
+        }
+    ]
+}

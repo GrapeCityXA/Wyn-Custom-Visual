@@ -1,0 +1,79 @@
+{
+  "dataBinding": {},
+  "options": {
+    "common": {
+      "size": {
+        "height": 100,
+        "width": 400
+      }
+    },
+    "visual": [
+      {
+        "displayName": "自定义属性",
+        "properties": [
+          {
+            "displayNameKey": "显示格式",
+            "name": "shape",
+            "type": "Enum",
+            "items": [
+              {
+                "value": "Short",
+                "displayNameKey": "短日期"
+              },
+              {
+                "value": "Long",
+                "displayNameKey": "长日期"
+              },
+              {
+                "value": "detailed",
+                "displayNameKey": "详细日期"
+              }
+            ],
+            "defaultValue": "detailed"
+          },
+          {
+            "name": "format",
+            "type": "Text",
+            "displayName": "格式化"
+          },
+          {
+            "name": "textStyle",
+            "type": "TextStyle",
+            "displayName": "字体设置",
+            "inheritFrom": "dashboard.textStyle",
+            "consumeScale": true
+          }
+        ]
+      },
+      {
+        "type": "appearance",
+        "defaultValue": {
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      },
+      {
+        "type": "interaction"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "type": "focus"
+    },
+    {
+      "type": "annotation"
+    },
+    {
+      "type": "export"
+    },
+    {
+      "type": "saveAsTemplate"
+    }
+  ],
+  "analysis": []
+}

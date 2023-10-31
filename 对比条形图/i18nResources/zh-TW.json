@@ -1,0 +1,163 @@
+{
+  "compareBarChart": "對比條形圖",
+  "dataBinding": {
+    "actualValue": "實際值",
+    "contrastValue": "對比值",
+    "dataFormat": "資料格式",
+    "compareCol": "對比欄位",
+    "dimension": "分類",
+    "tooltip": "工具提示"
+  },
+  "property": {
+    "chartStyle": "圖表樣式",
+    "quickStyle": {
+      "name": "快速樣式",
+      "default": "預設",
+      "style1": "樣式1",
+      "style2": "樣式2",
+      "style3": "樣式3",
+      "style4": "樣式4",
+      "init": "預設樣式值"
+    },
+    "barWidth": "柱子寬度",
+    "showBackground": "顯示背景",
+    "backgroundColor": "背景顏色",
+    "greCompareCol": "大於對比欄位",
+    "lesCompareCol": "小於對比欄位",
+    "barEndColor": "起始顏色",
+    "barStartColor": "終止顏色",
+    "inner": "漸變色位置",
+    "sortAccording": {
+      "name": "排序依據",
+      "percent": "百分比",
+      "actual": "實際值",
+      "noOrder": "原始排序"
+    },
+    "sortType": {
+      "name": "排序方式",
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "symbolType": {
+      "name": "填充方式",
+      "bar": "條形",
+      "circle": "圓形",
+      "rect": "矩形",
+      "roundRect": "圓角方形",
+      "triangle": "三角形",
+      "diamond": "菱形",
+      "pin": "氣泡",
+      "arrow": "箭頭",
+      "custom": "自定義圖片"
+    },
+    "radius": {
+      "leftTop": "圓角左上",
+      "rightTop": "圓角右上",
+      "leftBottom": "圓角左下",
+      "rightBottom": "圓角右下"
+    },
+    "symbolImage": {
+      "name": "填充圖片",
+      "sizeX": "圖片寬度",
+      "sizeY": "圖片高度",
+      "margin": "填充間隔",
+      "endName": "終點圖片",
+      "endSizeX": "終點圖片寬度",
+      "endSizeY": "終點圖片高度",
+      "endMargin": "終點間隔"
+    },
+    "carousel": {
+      "name": "輪播動畫",
+      "open": "開啟輪播",
+      "style": {
+        "name": "動畫樣式",
+        "linear": "樣式1",
+        "bounceOut": "樣式2",
+        "elasticOut": "樣式3"
+      },
+      "number": "顯示數量",
+      "time": "動畫間隔",
+      "duration": "動畫持續時長"
+    },
+    "category": {
+      "name": "分類軸",
+      "showLabel": "顯示標籤",
+      "axisWidth": "軸寬度",
+      "labelPositionX": "標籤位置X",
+      "labelPositionY": "標籤位置Y",
+      "labelRotation": "旋轉度數",
+      "showCategoryName": "顯示分類名",
+      "categoryLength": "分類換行字元",
+      "showPercent": "顯示百分比",
+      "percentFormat": "百分比格式",
+      "displayPolicy": {
+        "name": "顯示方式",
+        "lineFeed": "折行",
+        "ellipsis": "省略號",
+        "none": "無"
+      }
+    },
+    "showActual": "顯示實際值",
+    "showContrast": "顯示對比值",
+    "unit": {
+      "actual": "實際值單位",
+      "contrast": "對比值單位",
+      "auto": "自動",
+      "1": "無",
+      "100": "百",
+      "1000": "千",
+      "10000": "萬",
+      "100000": "十萬",
+      "1000000": "百萬",
+      "10000000": "千萬",
+      "100000000": "億",
+      "1000000000": "十億"
+    },
+    "fontSetting": "字型設定",
+    "dataLabel": {
+      "name": "資料標註",
+      "showLabel": "顯示標註",
+      "showPercent": "顯示百分比",
+      "percentFormat": "百分比格式"
+    },
+    "dataRanking": {
+      "name": "資料排名",
+      "showRanking": "顯示排名",
+      "positionX": "排名位置X",
+      "positionY": "排名位置Y",
+      "shape": {
+        "name": "背景形狀",
+        "circular": "圓形",
+        "square": "正方形",
+        "custom": "自定義圖片",
+        "none": "無"
+      },
+      "image": "背景圖片",
+      "color": "背景顏色",
+      "spacing": "背景間距",
+      "sizeX": "背景寬度",
+      "sizeY": "背景高度",
+      "size": "背景大小",
+      "customRanking": {
+        "name": "特定排名",
+        "style": "特定排名樣式",
+        "conditionValue": "排名序號",
+        "replaceValue": "顯示名稱",
+        "fontColor": "字型顏色",
+        "color": "背景顏色",
+        "image": "背景圖片",
+        "startColor": "條形開始顏色",
+        "endColor": "條形終止顏色"
+      }
+    },
+    "clickAction": {
+      "name": "滑鼠左鍵選項",
+      "none": "無",
+      "showToolTip": "顯示工具提示",
+      "keep": "保留",
+      "exclude": "排除",
+      "drill": "鑽取",
+      "jump": "跳轉"
+    }
+  }
+}

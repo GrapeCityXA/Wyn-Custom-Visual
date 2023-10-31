@@ -1,0 +1,75 @@
+{
+  "bingMap": "必應地圖",
+  "key": "密鑰",
+  "dataRoles": {
+    "longitude": "經度",
+    "latitude": "緯度",
+    "size": "大小",
+    "color": "顏色",
+    "values": "值",
+    "category": "類別",
+    "firstLevelLocationDivision": "國家區域",
+    "secondLevelLocationDivision": "省級區域",
+    "thirdLevelLocationDivision": "市級區域"
+  },
+  "templates": {
+    "collectionName": "圖層",
+    "pushPinMapTemplate": "散點圖層",
+    "heatMapTemplate": "熱力圖層",
+    "blockMapTemplate": "區塊圖層"
+  },
+  "chartType": {
+    "name": "類型",
+    "scatter": "散點圖",
+    "heat": "熱力圖",
+    "block": "區塊圖"
+  },
+  "mapType": {
+    "name": "地圖類型",
+    "road": "道路",
+    "canvasDark": "深色畫布",
+    "grayscale": "灰度",
+    "aerial": "航測圖",
+    "birdseye": "鳥瞰圖",
+    "streetside": "街景視圖"
+  },
+  "colorStyle": {
+    "name": "色彩樣式",
+    "maintainColorAssignments": "保持顏色分配",
+    "palette": "調色板"
+  },
+  "hoverAct": "鼠標浮動展示標籤",
+  "pinOptions": {
+    "name": "散點圖屬性",
+    "maxRadius": "散點最大半徑",
+    "colorPreference": {
+      "name": "顏色偏好",
+      "palette": "調色板",
+      "gradient": "漸變"
+    },
+    "baseColor": "填充顏色",
+    "gradientPreference": {
+      "name": "漸變偏好",
+      "gradual": "平滑漸變",
+      "grouped": "分組漸變"
+    },
+    "rangeCount": "分組個數",
+    "showSizeLegend": "顯示散點大小圖例",
+    "showDataLabel": "顯示散點值",
+    "tooltip": "工具提示",
+    "tooltipContentSetting": "設置..."
+  },
+  "heatOptions": {
+    "name": "熱力圖屬性",
+    "step": "階",
+    "radius": "影響半徑",
+    "unit": "半徑單位",
+    "pixels": "像素",
+    "meters": "米"
+  },
+  "blockOptions": {
+    "name": "區塊圖屬性",
+    "locType": "區域類型"
+  },
+  "null": "[空值]"
+}

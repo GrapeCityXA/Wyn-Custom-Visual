@@ -1,0 +1,135 @@
+{
+  "extendedIndicator": "Extended Indicator",
+  "dataBinding": {
+    "actualValue": "Actual Value",
+    "dataFormat": "Data Format",
+    "displayUnit": "Display Unit",
+    "contrastValue": "Contrast Value"
+  },
+  "property": {
+    "fontSetting": "Font Setting",
+    "dataSetting": {
+      "name": "Data Setting",
+      "actual": "Actual Value Source",
+      "contrast": "Contrast Value Source",
+      "dataset": "Dataset",
+      "customdata": "Custom Data",
+      "customActual": "Custom Actual Value",
+      "customContrast": "Custom Contrast Value"
+    },
+    "chartStyle": {
+      "name": "Chart Style",
+      "quickStyle": {
+        "name": "Quick Style",
+        "default": "Default",
+        "style1": "Style1",
+        "style2": "Style2",
+        "style3": "Style3",
+        "style4": "Style4",
+        "style5": "Style5",
+        "style6": "Style6",
+        "style7": "Style7",
+        "style8": "Style8",
+        "style9": "Style9",
+        "init": "Init Style Value"
+      },
+      "gaugeR": "Gauge Radius",
+      "gaugeWidth": "Gauge Width",
+      "xPosition": "X Offset",
+      "yPosition": "Y Offset",
+      "startAngle": "Start Angle",
+      "endAngle": "End Angle",
+      "gaugeColor": "Gauge Color"
+    },
+    "rangeSetting": {
+      "name": "Interval Division",
+      "color": "Interval Color",
+      "section": "Interval ID",
+      "sectionMax": "Interval Maximum Value",
+      "sectionColor": "Interval Color",
+      "applyToProgress": "Apply To Progress",
+      "applyToCircle": "Apply To Inner Circle",
+      "applyToLabel1": "Apply To Label1",
+      "applyToLabel2": "Apply To Label2"
+    },
+    "bgImageSetting": {
+      "name": "Background Image Setting",
+      "showBgImage": "Show Background Image",
+      "bgImageAnimate": "Rotation",
+      "bgAnimateTime": "Rotation Duration",
+      "bgAnimateDirection": {
+        "name": "Rotation Direction",
+        "positive": "Clockwise",
+        "negative": "Counterclockwise"
+      },
+      "imageSetting": {
+        "name": "Image Setting",
+        "bgImage1": "Background Image 1",
+        "bgImage2": "Background Image 2",
+        "custom": "Custom Image"
+      },
+      "bgImage": "Background Image",
+      "bgImageSize": "Background Image Size"
+    },
+    "innerSetting": {
+      "name": "Inner Circle Setting",
+      "gaugeCircle": "Show Inner Circle",
+      "gaugeCircleDge": "Follow Gauge Angle",
+      "gaugeCircleStartColor": "Inner Circle Start Color",
+      "gaugeCircleEndColor": "Inner Circle End Color",
+      "gaugeCircleInsideR": "Inner Circle Inside Radius",
+      "gaugeCircleOutsideR": "Inner Circle Outside Radius"
+    },
+    "gearSetting": {
+      "name": "Gear Setting",
+      "gaugeGear": "Show Gear",
+      "gearNumber": "Gear Number",
+      "gearR": "Gear Radius",
+      "gearWidth": "Gear Width",
+      "gearLength": "Gear Length",
+      "gearColor": "Gear Color",
+      "gearShadowColor": "Gear Shadow Color"
+    },
+    "progressSetting": {
+      "name": "Progress Setting",
+      "showProgress": "Show Progress",
+      "progressRoundCap": "Round Cap",
+      "progressWidth": "Progress Width",
+      "progressOffset": "Progress Offset",
+      "progressColor": "Progress Color",
+      "progressGradientColor": "Progress Gradient Color"
+    },
+    "splitLineSetting": {
+      "name": "Split Line Setting",
+      "showsplitLine": "Show Split Line",
+      "splitLineNumber": "Split Line Number",
+      "splitLineWidth": "Split Line Width",
+      "splitLineDistance": "Split Line Distance",
+      "splitLineColor": "Split Line Color"
+    },
+    "subTitleSetting": {
+      "name": "Subtitle Setting",
+      "showSubTitle": "Show Subtitle",
+      "subtitle": "Subtitle",
+      "xPosition": "Label X offset",
+      "yPosition": "Label Y offset"
+    },
+    "dataLabel": {
+      "dataLabel1": "Data Label1",
+      "dataLabel2": "Data Label2",
+      "showDataLabel": "Data Label",
+      "showActual": "Actual Value",
+      "showContrast": "Contrast Value",
+      "showDetail": "Percent",
+      "lineHeight": "Label Line Height",
+      "xPosition": "Label X Offset",
+      "yPosition": "Label Y Offset",
+      "unit": "Suffix Unit",
+      "unitFontSetting": "Suffix Unit Font Setting"
+    },
+    "clickAction": {
+      "name": "Click Action",
+      "jump": "Jump"
+    }
+  }
+}

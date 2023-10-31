@@ -1,0 +1,21 @@
+{
+    "name": "wordCloud3D",
+    "version": "0.0.1",
+    "displayName": "词云3D",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": [
+        "html2canvas"
+    ],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$trusted": true
+    },
+    "id": "8876a250-b93a-11eb-87b2-6baaf4847e5c",
+    "cliVersion": "6.0.0"
+}

@@ -1,0 +1,80 @@
+{
+  "forceDirectedGraph": "力導向圖",
+  "databinding": {
+    "sourceName": "源名稱",
+    "sourceSeries": "源顏色",
+    "sourceImage": "源圖片",
+    "targetName": "目標名稱",
+    "targetSeries": "目標顏色",
+    "targetImage": "目標圖片",
+    "weight": "權重"
+  },
+  "tooltip": {
+    "nodeName": "節點名稱",
+    "nodeSeries": "節點顏色"
+  },
+  "inspector": {
+    "common": {
+      "name": "常用設定",
+      "palette": "調色盤",
+      "graphOpacity": "圖形不透明度",
+      "graphDraggable": "圖形可拖動",
+      "graphZoomable": "圖形可縮放",
+      "autoZoom": "自動縮放",
+      "zoom": "縮放級別"
+    },
+    "node": {
+      "name": "節點設定",
+      "draggable": "可拖動",
+      "sizeSource": {
+        "name": "尺寸來源",
+        "byWeight": "按權重",
+        "allEqual": "全部相等"
+      },
+      "size": "尺寸",
+      "minSize": "最小尺寸",
+      "maxSize": "最大尺寸",
+      "showLabel": "顯示標籤",
+      "labelTextStyle": "標籤字型設定"
+    },
+    "edge": {
+      "name": "邊設定",
+      "isDirected": "有向",
+      "curveness": "彎曲度",
+      "color": "顏色",
+      "minWidth": "最小寬度",
+      "maxWidth": "最大寬度"
+    },
+    "legend": {
+      "name": "圖例",
+      "show": "顯示圖例",
+      "textStyle": "圖例字型設定",
+      "orientation": {
+        "name": "方向",
+        "vertical": "垂直",
+        "horizontal": "水平"
+      },
+      "horizontalPosition": {
+        "name": "水平位置",
+        "left": "居左",
+        "right": "居右",
+        "center": "居中"
+      },
+      "verticalPosition": {
+        "name": "垂直位置",
+        "top": "頂部",
+        "bottom": "底部",
+        "middle": "居中"
+      },
+      "wrapLegend": "圖例換行"
+    },
+    "interaction": {
+      "mode": {
+        "name": "互動方式",
+        "node": "按節點",
+        "edge": "按邊"
+      }
+    }
+  },
+  "emptyDisplay": "[空白]"
+}

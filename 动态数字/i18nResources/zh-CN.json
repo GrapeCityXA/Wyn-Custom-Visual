@@ -1,0 +1,32 @@
+{
+  "animationNumber": "动态数字",
+  "dataBinding": {
+    "actualValue": "数值"
+  },
+  "property": {
+    "chartStyle": "图表样式",
+    "animationMode": {
+      "name": "动画模式",
+      "slide": "幻灯片",
+      "flip": "翻转"
+    },
+    "animationDuration": "动画时长",
+    "decimalLength": "小数位控制位",
+    "integerType": {
+      "name": "整数位控制位",
+      "auto": "自动",
+      "manual": "手动"
+    },
+    "integerLength": "整数位数",
+    "showThousandSign": "显示千分符",
+    "backgroundColor": "背景色",
+    "gradientBackgroundColor": "渐变修饰色",
+    "gradientType": {
+      "name": "渐变方式",
+      "null": "无",
+      "center": "中间",
+      "topToBottom": "两端"
+    },
+    "fontSetting": "字体设置"
+  }
+}

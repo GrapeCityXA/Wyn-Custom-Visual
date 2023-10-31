@@ -1,0 +1,135 @@
+{
+  "extendedIndicator": "扩展指示器",
+  "dataBinding": {
+    "actualValue": "实际值",
+    "dataFormat": "数据格式",
+    "displayUnit": "数据单位",
+    "contrastValue": "对比值"
+  },
+  "property": {
+    "fontSetting": "字体设置",
+    "dataSetting": {
+      "name": "数据设定",
+      "actual": "实际值来源",
+      "contrast": "对比值来源",
+      "dataset": "数据集",
+      "customdata": "自定义数据",
+      "customActual": "自定义实际值",
+      "customContrast": "自定义对比值"
+    },
+    "chartStyle": {
+      "name": "图表样式",
+      "quickStyle": {
+        "name": "快速样式",
+        "default": "默认",
+        "style1": "样式1",
+        "style2": "样式2",
+        "style3": "样式3",
+        "style4": "样式4",
+        "style5": "样式5",
+        "style6": "样式6",
+        "style7": "样式7",
+        "style8": "样式8",
+        "style9": "样式9",
+        "init": "默认样式值"
+      },
+      "gaugeR": "表盘半径",
+      "gaugeWidth": "表盘宽度",
+      "xPosition": "X偏移量",
+      "yPosition": "Y偏移量",
+      "startAngle": "起始角度",
+      "endAngle": "终止角度",
+      "gaugeColor": "刻度盘颜色"
+    },
+    "rangeSetting": {
+      "name": "区间划分",
+      "color": "区间色",
+      "section": "区间号",
+      "sectionMax": "区间上限值",
+      "sectionColor": "区间颜色",
+      "applyToProgress": "作用到进度条",
+      "applyToCircle": "作用到内圆环",
+      "applyToLabel1": "作用到标签1",
+      "applyToLabel2": "作用到标签2"
+    },
+    "bgImageSetting": {
+      "name": "背景图片样式",
+      "showBgImage": "显示背景",
+      "bgImageAnimate": "背景旋转",
+      "bgAnimateTime": "旋转时间",
+      "bgAnimateDirection": {
+        "name": "旋转方向",
+        "positive": "顺时针",
+        "negative": "逆时针"
+      },
+      "imageSetting": {
+        "name": "图片设置",
+        "bgImage1": "背景图一",
+        "bgImage2": "背景图二",
+        "custom": "自定义"
+      },
+      "bgImage": "背景图片",
+      "bgImageSize": "图片大小"
+    },
+    "innerSetting": {
+      "name": "内圆环样式",
+      "gaugeCircle": "显示内圆环",
+      "gaugeCircleDge": "角度跟随仪表盘",
+      "gaugeCircleStartColor": "内圆环开始颜色",
+      "gaugeCircleEndColor": "内圆环结束颜色",
+      "gaugeCircleInsideR": "内圆环内径",
+      "gaugeCircleOutsideR": "内圆环外径"
+    },
+    "gearSetting": {
+      "name": "齿轮样式",
+      "gaugeGear": "显示齿轮",
+      "gearNumber": "齿轮个数",
+      "gearR": "齿轮半径",
+      "gearWidth": "齿轮宽度",
+      "gearLength": "齿轮长度",
+      "gearColor": "齿轮颜色",
+      "gearShadowColor": "齿轮阴影颜色"
+    },
+    "progressSetting": {
+      "name": "进度条样式",
+      "showProgress": "显示进度条",
+      "progressRoundCap": "进度条圆角",
+      "progressWidth": "进度条宽度",
+      "progressOffset": "进度条偏移量",
+      "progressColor": "进度条颜色",
+      "progressGradientColor": "进度条渐变颜色"
+    },
+    "splitLineSetting": {
+      "name": "刻度盘分隔线样式",
+      "showsplitLine": "显示分隔线",
+      "splitLineNumber": "分割数量",
+      "splitLineWidth": "线宽",
+      "splitLineDistance": "线和轴的距离",
+      "splitLineColor": "分隔线颜色"
+    },
+    "subTitleSetting": {
+      "name": "副标题样式",
+      "showSubTitle": "显示副标题",
+      "subtitle": "副标题",
+      "xPosition": "标签X偏移量",
+      "yPosition": "标签Y偏移量"
+    },
+    "dataLabel": {
+      "dataLabel1": "数据标签1",
+      "dataLabel2": "数据标签2",
+      "showDataLabel": "数据标签",
+      "showActual": "实际值",
+      "showContrast": "对比值",
+      "showDetail": "百分比",
+      "lineHeight": "标签行高",
+      "xPosition": "标签X偏移量",
+      "yPosition": "标签Y偏移量",
+      "unit": "后缀单位",
+      "unitFontSetting": "后缀单位字体设置"
+    },
+    "clickAction": {
+      "name": "鼠标左键选项",
+      "jump": "跳转"
+    }
+  }
+}

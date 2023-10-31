@@ -1,0 +1,17 @@
+{
+    "name": "3D漏斗图",
+    "displayName": "3D漏斗图",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$trusted": true
+    },
+    "id": "7dc38760-b93a-11eb-9e03-4bb98186bdfd",
+    "cliVersion": "6.0.0"
+}

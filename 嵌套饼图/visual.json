@@ -1,0 +1,18 @@
+{
+    "id": "c056ed10-f5da-11eb-a06a-d7b485c48f05",
+    "name": "嵌套饼图",
+    "displayName": "",
+    "displayNameKey": "",
+    "icon": "visualIcon",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": ["echarts"],
+    "assets": {
+        "images": {
+            "visualIcon": "assets/icon.png"
+        }
+    },
+    "configuration": {},
+    "cliVersion": "6.0.0"
+}

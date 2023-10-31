@@ -1,0 +1,57 @@
+{
+    "organizationDiagram": "Organization Diagram",
+    "dataBinding": {
+        "name": "Name(id)",
+        "parentName": "Parent Name(pid)",
+        "color": "Color",
+        "title": "Title",
+        "image": "Image"
+    },
+    "options": {
+        "chartStyle": "Chart Style",
+        "maintainColorAssignment": "Maintain Color Assignments",
+        "nodeColor": "Palette",
+        "opacity": "Graph Opacity",
+        "edgeColor": "Edge Color",
+        "graphLayout": "Graph Layout",
+        "TB": "Top Bottom",
+        "BT": "Bottom Top",
+        "LR": "Left Right",
+        "RL": "Right Left",
+        "nodeAspectRatio": "Node Aspect Ratio",
+        "imageNodeWidth": "Image Node Width",
+        "imageAspectRatio": "Image Aspect Ratio",
+        "horizontalSpacing": "Horizontal Spacing",
+        "verticalSpacing": "Vertical spacing",
+        "radius": "Corner Radius",
+        "buttonSize": "Button Size",
+        "large": "Large",
+        "medium": "Medium",
+        "small": "Small",
+        "nameTextStyle": "Name Font Setting",
+        "titleTextStyle": "Title Font Setting",
+        "showTooltip": "Show Tooltip",
+        "nameAlignment": {
+            "title": "Name Alignment",
+            "left": "Left",
+            "center": "Center",
+            "right": "Right"
+        },
+        "titleAlignment": {
+            "title": "Title Alignment",
+            "left": "left",
+            "center": "center",
+            "right": "right"
+        },
+        "titleBaseline": {
+            "title": "Title BaseLine",
+            "top": "top",
+            "middle": "middle",
+            "bottom": "bottom"
+        }
+    },
+    "visual": {
+        "null": "[NULL]",
+        "emptyDisplay": "[Blank]"
+    }
+}
