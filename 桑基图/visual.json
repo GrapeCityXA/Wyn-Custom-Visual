@@ -1,0 +1,20 @@
+{
+    "id": "9e659580-e121-11eb-aab0-2502646f7104",
+    "name": "sankey",
+    "displayName": "",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": [
+        "echarts"
+    ],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$trusted": true
+    },
+    "cliVersion": "5.0.0"
+}

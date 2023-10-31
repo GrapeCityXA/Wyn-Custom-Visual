@@ -1,0 +1,57 @@
+{
+    "organizationDiagram": "组织关系图",
+    "dataBinding": {
+        "name": "名字",
+        "parentName": "父名字",
+        "color": "颜色",
+        "title": "主题",
+        "image": "图片"
+    },
+    "options": {
+        "chartStyle": "图表样式",
+        "maintainColorAssignment": "保持颜色分配",
+        "nodeColor": "调色板",
+        "opacity": "图表不透明度",
+        "edgeColor": "边颜色",
+        "graphLayout": "图表布局",
+        "TB": "自顶向下",
+        "BT": "自下向顶",
+        "LR": "从左至右",
+        "RL": "从右至左",
+        "nodeAspectRatio": "节点宽高比",
+        "imageNodeWidth": "图片宽度占比",
+        "imageAspectRatio": "图片宽高比",
+        "horizontalSpacing": "横向间距",
+        "verticalSpacing": "纵向间距",
+        "radius": "圆角弧度",
+        "buttonSize": "按钮尺寸",
+        "large": "大",
+        "medium": "中",
+        "small": "小",
+        "nameTextStyle": "名字字体设置",
+        "titleTextStyle": "标题字体设置",
+        "showTooltip": "显示工具提示",
+        "nameAlignment": {
+            "title": "名字对齐",
+            "left": "左",
+            "center": "中",
+            "right": "右"
+        },
+        "titleAlignment": {
+            "title": "标题对齐",
+            "left": "左",
+            "center": "中",
+            "right": "右"
+        },
+        "titleBaseline": {
+            "title": "标题基线",
+            "top": "上",
+            "middle": "中",
+            "bottom": "下"
+        }
+    },
+    "visual": {
+      "null": "[空值]",
+      "emptyDisplay":"[空白]"
+    }
+}

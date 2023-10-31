@@ -1,0 +1,23 @@
+{
+    "name": "Bing Map",
+    "displayName": "Bing Map",
+    "displayNameKey": "bingMap",
+    "icon": "visualIcon",
+    "description": "",
+    "externalJs": [
+        "https://www.bing.com/api/maps/mapcontrol?callback=wynVisualGetMap"
+    ],
+    "externalCss": [],
+    "dependencies": ["html2canvas"],
+    "assets": {
+        "images": {
+            "visualIcon": "assets/icon.png"
+        }
+    },
+    "configuration": {
+        "$runInIframe": false,
+        "Application Key": ""
+    },
+    "cliVersion": "5.0.0",
+    "id": "89fab3b0-bd3f-11eb-ae27-5966b85db1ce"
+}

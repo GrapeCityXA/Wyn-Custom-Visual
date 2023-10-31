@@ -1,0 +1,111 @@
+{
+  "visualName" : "3D Model Visual",
+  "data": {
+    "category": "Room Id",
+    "values": "Values",
+    "properties": "Properties",
+    "format" : "Format",
+    "displayUnit" : "Display Unit"
+  },
+
+  "event": {
+    "importModel": "Import Model",
+    "animationSettings" : "Set up Animation",
+    "setDefaultCamera" : "Set Default Camera"
+  },
+  "background": "Background Color",
+  "defaultCamera": "Default Camera",
+  "defaultCameraX": "Default Camera X",
+  "defaultCameraY": "Default Camera Y",
+  "defaultCameraZ": "Default Camera Z",
+  "defaultTargetX": "Default Target X",
+  "defaultTargetY": "Default Target Y",
+  "defaultTargetZ": "Default Target Z",
+  "loop": "Loop",
+  "loopSwitch": "Auto Loop",
+  "defaultCameraFollow":"Camera Follow",
+  "loopTime": "Loop Time",
+  "conditionFormat" : "Conditional Format",
+  "onlyShowOnFocus" : "Only show on focus Room",
+
+  "dataTip" : {
+    "display" : "Data Tip",
+    "horizontalPosition" : "Horizontal Position",
+    "Left" : "Left",
+    "Mid" : "Mid",
+    "Right" : "Right",
+    "verticalPosition" : "Vertical Position",
+    "Top" : "Top",
+    "Bottom" : "Bottom",
+    "dataTipTop" : "Vertical Offset",
+    "dataTipLeft" : "Horizontal Offset",
+    "bodyTextStyle" : "Data Tip Font Settings",
+    "bgColor" : "Background Color",
+    "bgImg" : "Background Image"
+  },
+
+  "dataLabel" : {
+    "display" : "Data Label",
+    "showDataLabel" : "Show Data Label",
+    "showValue" : "Show Values",
+    "showRoomId" : "Show Room ID",
+    "showColumnName" : "Show Column Name",
+    "textStyle" : "Text Style",
+    "delimiter" : "Delimiter",
+    "border" : "Border",
+    "padding" : "Padding",
+    "borderColor" : "Border Color",
+    "backgroundColor" : "Background Color",
+    "backgroundImage" : "Background Image",
+
+    "horizontalPosition" : "Horizontal Position",
+    "Left" : "Left",
+    "Mid" : "Mid",
+    "Right" : "Right",
+    "verticalPosition" : "Vertical Position",
+    "Top" : "Top",
+    "Bottom" : "Bottom",
+    "verticalOffset" : "Vertical Offset",
+    "horizontalOffset" : "Horizontal Offset"
+  },
+
+  "apply" : "Apply",
+  "cancel" : "Cancel",
+  "room" : "Room",
+
+  "window" : {
+    "importModel" : {
+      "title" : "Select Model"
+    },
+    "cameraList" : {
+      "title" : "Rooms List",
+      "default" : "Default Camera"
+    },
+    "loopFocus" : {
+      "cameraFollowing" : "Camera Following"
+    },
+    "animationSettings" : {
+      "title" : "Configure Animation",
+      "tipWhenNoAnimation" : "No animation in the model",
+      "selectOpeningAnimation" : "Entrance Animation",
+      "none" : "None",
+      "openingStopWhere" : "After Entrance Animation",
+      "stopAtFirstFrame" : "Stay at the Last Frame",
+      "stopAtLastFrame" : "Restore to the frame",
+      
+      "selectLoopingAnimations" : "Loop Animation",
+      "whenLoopingAnimationStart" : "Loop Animations start",
+      "atTheSameTimeWithOpening" : "Immediate",
+      "afterTheOpeningAnimationEnds" : "After entrance animation",
+      "loopMode" : "Loop Animation Mode",
+      "repeat" : "Repeat",
+      "pingPong" : "Ping Pong",
+      "once" : "Once"
+    },
+    "loadingTip" : {
+      "pleaseLoadModel" : "Please import Model",
+      "loadingModel" : "Loading model...",
+      "loadingError" : "Loading error! Please confirm whether the file is correct or has permission."
+    }
+  }
+}

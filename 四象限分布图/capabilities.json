@@ -1,0 +1,363 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "name",
+                "displayNameKey": "plotData.name",
+                "kind": "grouping"
+            }, {
+                "name": "xAxis",
+                "displayNameKey": "plotData.x",
+                "kind": "value"
+            }, {
+                "name": "yAxis",
+                "displayNameKey": "plotData.y",
+                "kind": "value"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "name": {
+                                "min": 1
+                            },
+                            "xAxis": {
+                                "min": 1
+                            },
+                            "yAxis": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [{
+            "name": { "max": 1 },
+            "xAxis": { "max": 1 },
+            "yAxis": { "max": 1 }
+        }],
+        "conversionRules": {
+            "in": [{
+                "mode": "pre",
+                "execute": [{
+                    "source": "category",
+                    "target": "name",
+                    "cmd": "all"
+                }]
+            }],
+            "out": [{
+                "mode": "pre",
+                "execute": [{
+                    "source": "name",
+                    "target": "category",
+                    "cmd": "all"
+                }]
+            }]
+        }
+    },
+    "options": {
+        "visual": [
+            {
+                "displayNameKey": "chartMargin.name",
+                "properties": [
+                    {
+                        "type": "Integer",
+                        "name": "chartMarginLeft",
+                        "displayNameKey": "chartMargin.left",
+                        "defaultValue": 40
+                    },
+                    {
+                        "type": "Integer",
+                        "name": "chartMarginRight",
+                        "displayNameKey": "chartMargin.right",
+                        "defaultValue": 20
+                    },
+                    {
+                        "type": "Integer",
+                        "name": "chartMarginTop",
+                        "displayNameKey": "chartMargin.top",
+                        "defaultValue": 25
+                    },
+                    {
+                        "type": "Integer",
+                        "name": "chartMarginBottom",
+                        "displayNameKey": "chartMargin.bottom",
+                        "defaultValue": 35
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "slicePoint.name",
+                "properties": [
+                    {
+                        "type": "Float",
+                        "name": "xSlice",
+                        "displayNameKey": "slicePoint.x",
+                        "defaultValue": 0
+                    },
+                    {
+                        "type": "Float",
+                        "name": "ySlice",
+                        "displayNameKey": "slicePoint.y",
+                        "defaultValue": 0
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "showLabel.title",
+                "properties": [
+                    {
+                        "type": "Boolean",
+                        "name": "showLabel",
+                        "displayNameKey": "showLabel.property"
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "quadrants.name[0]",
+                "type": "custom",
+                "properties": [
+                    {
+                        "type": "Color",
+                        "name": "firstQuadrantColor",
+                        "displayNameKey": "quadrants.properties.color",
+                        "defaultValue": "#47a7bf"
+                    },
+                    {
+                        "type": "Text",
+                        "name": "firstQuadrantName",
+                        "displayNameKey": "quadrants.properties.name",
+                        "defaultValue": "First Quadrant"
+                    },
+                    {
+                        "type": "TextStyle",
+                        "name": "firstQuadrantTextStyle",
+                        "displayNameKey": "quadrants.properties.textStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "color": "#000000",
+                            "fontFamily": "Arial",
+                            "fontSize": "1.0x",
+                            "fontStyle": "Normal",
+                            "fontWeight": "Normal"
+                        }
+                    },
+                    {
+                        "type": "Percentage",
+                        "name": "firstQuadrantTextX",
+                        "displayNameKey": "quadrants.properties.offsetX",
+                        "defaultValue": 50
+                    },
+                    {
+                        "type": "Percentage",
+                        "name": "firstQuadrantTextY",
+                        "displayNameKey": "quadrants.properties.offsetY",
+                        "defaultValue": 50
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "quadrants.name[1]",
+                "type": "custom",
+                "properties": [
+                    {
+                        "type": "Color",
+                        "name": "secondQuadrantColor",
+                        "displayNameKey": "quadrants.properties.color",
+                        "defaultValue": "#86e7ff"
+                    },
+                    {
+                        "type": "Text",
+                        "name": "secondQuadrantName",
+                        "displayNameKey": "quadrants.properties.name",
+                        "defaultValue": "Second Quadrant"
+                    },
+                    {
+                        "type": "TextStyle",
+                        "name": "secondQuadrantTextStyle",
+                        "displayNameKey": "quadrants.properties.textStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "color": "#000000",
+                            "fontFamily": "Arial",
+                            "fontSize": "1.0x",
+                            "fontStyle": "Normal",
+                            "fontWeight": "Normal"
+                        }
+                    },
+                    {
+                        "type": "Percentage",
+                        "name": "secondQuadrantTextX",
+                        "displayNameKey": "quadrants.properties.offsetX",
+                        "defaultValue": 50
+                    },
+                    {
+                        "type": "Percentage",
+                        "name": "secondQuadrantTextY",
+                        "displayNameKey": "quadrants.properties.offsetY",
+                        "defaultValue": 50
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "quadrants.name[2]",
+                "type": "custom",
+                "properties": [
+                    {
+                        "type": "Color",
+                        "name": "thirdQuadrantColor",
+                        "displayNameKey": "quadrants.properties.color",
+                        "defaultValue": "#afefff"
+                    },
+                    {
+                        "type": "Text",
+                        "name": "thirdQuadrantName",
+                        "displayNameKey": "quadrants.properties.name",
+                        "defaultValue": "Third Quadrant"
+                    },
+                    {
+                        "type": "TextStyle",
+                        "name": "thirdQuadrantTextStyle",
+                        "displayNameKey": "quadrants.properties.textStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "color": "#000000",
+                            "fontFamily": "Arial",
+                            "fontSize": "1.0x",
+                            "fontStyle": "Normal",
+                            "fontWeight": "Normal"
+                        }
+                    },
+                    {
+                        "type": "Percentage",
+                        "name": "thirdQuadrantTextX",
+                        "displayNameKey": "quadrants.properties.offsetX",
+                        "defaultValue": 50
+                    },
+                    {
+                        "type": "Percentage",
+                        "name": "thirdQuadrantTextY",
+                        "displayNameKey": "quadrants.properties.offsetY",
+                        "defaultValue": 50
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "quadrants.name[3]",
+                "type": "custom",
+                "properties": [
+                    {
+                        "type": "Color",
+                        "name": "fourthQuadrantColor",
+                        "displayNameKey": "quadrants.properties.color",
+                        "defaultValue": "#d7f7ff"
+                    },
+                    {
+                        "type": "Text",
+                        "name": "fourthQuadrantName",
+                        "displayNameKey": "quadrants.properties.name",
+                        "defaultValue": "Fourth Quadrant"
+                    },
+                    {
+                        "type": "TextStyle",
+                        "name": "fourthQuadrantTextStyle",
+                        "displayNameKey": "quadrants.properties.textStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "color": "#000000",
+                            "fontFamily": "Arial",
+                            "fontSize": "1.0x",
+                            "fontStyle": "Normal",
+                            "fontWeight": "Normal"
+                        }
+                    },
+                    {
+                        "type": "Percentage",
+                        "name": "fourthQuadrantTextX",
+                        "displayNameKey": "quadrants.properties.offsetX",
+                        "defaultValue": 50
+                    },
+                    {
+                        "type": "Percentage",
+                        "name": "fourthQuadrantTextY",
+                        "displayNameKey": "quadrants.properties.offsetY",
+                        "defaultValue": 50
+                    }
+                ]
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "interaction"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "clearSelection"
+        },
+        {
+            "type": "focus"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "sort"
+        },
+        {
+            "type": "rank"
+        },
+        {
+            "type": "convertVisual"
+        },
+        {
+            "type": "showData",
+            "rule": {
+                "out": [{
+                    "mode": "pre",
+                    "execute": [{
+                        "source": "name",
+                        "target": "rows",
+                        "cmd": "all"
+                    }, {
+                        "source": "xAxis",
+                        "target": "values",
+                        "cmd": "all"
+                    }, {
+                        "source": "yAxis",
+                        "target": "values",
+                        "cmd": "all"
+                    }]
+                }]
+            }
+        },
+        {
+            "type": "analysisPath"
+        },
+        {
+            "type": "shareScenario"
+        },
+        {
+            "type": "openFullDashboard"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

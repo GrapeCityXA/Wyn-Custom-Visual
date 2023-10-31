@@ -1,0 +1,80 @@
+{
+  "forceDirectedGraph": "Force Directed Graph",
+  "databinding": {
+    "sourceName": "Source Name",
+    "sourceSeries": "Source Color",
+    "sourceImage": "Source Image",
+    "targetName": "Target Name",
+    "targetSeries": "Target Color",
+    "targetImage": "Target Image",
+    "weight": "Weight"
+  },
+  "tooltip": {
+    "nodeName": "Node Name",
+    "nodeSeries": "Node Color"
+  },
+  "inspector": {
+    "common": {
+      "name": "Common Setting",
+      "palette": "Palette",
+      "graphOpacity": "Graph Opacity",
+      "graphDraggable": "Graph Draggable",
+      "graphZoomable": "Graph Zoomable",
+      "autoZoom": "Auto Zoom",
+      "zoom": "Zoom"
+    },
+    "node": {
+      "name": "Node Setting",
+      "draggable": "Draggable",
+      "sizeSource": {
+        "name": "Size Source",
+        "byWeight": "By Weight",
+        "allEqual": "All Equal"
+      },
+      "size": "Size",
+      "minSize": "Min Size",
+      "maxSize": "Max Size",
+      "showLabel": "Show Label",
+      "labelTextStyle": "Label Font Setting"
+    },
+    "edge": {
+      "name": "Edge Setting",
+      "isDirected": "Directed",
+      "curveness": "Curveness",
+      "color": "Color",
+      "minWidth": "Min Width",
+      "maxWidth": "Max Width"
+    },
+    "legend": {
+      "name": "Legend",
+      "show": "Show Legend",
+      "textStyle": "Legend Font Setting",
+      "orientation": {
+        "name": "Orientation",
+        "vertical": "Vertical",
+        "horizontal": "Horizontal"
+      },
+      "horizontalPosition": {
+        "name": "Horizontal Position",
+        "left": "Left",
+        "right": "Right",
+        "center": "Center"
+      },
+      "verticalPosition": {
+        "name": "Vertical Position",
+        "top": "Top",
+        "bottom": "Bottom",
+        "middle": "Middle"
+      },
+      "wrapLegend": "Wrap Legend"
+    },
+    "interaction": {
+      "mode": {
+        "name": "Interaction Mode",
+        "node": "By Nodes",
+        "edge": "By Edges"
+      }
+    }
+  },
+  "emptyDisplay": "[Blank]"
+}

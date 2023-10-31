@@ -1,0 +1,23 @@
+{
+    "id": "ec080670-e3a5-11eb-b740-13dca33449c7",
+    "name": "3D柱状地图",
+    "displayName": "3D柱状地图",
+    "displayNameKey": "3D柱状地图",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": ["html2canvas"],
+    "assets": {
+        "images": {
+            "image": "assets/image.png",
+            "image1": "assets/image1.png",
+            "image2": "assets/image2.png",
+            "image3": "assets/image3.png"
+        }
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "cliVersion": "6.0.0"
+}

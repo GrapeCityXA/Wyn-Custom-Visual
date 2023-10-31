@@ -1,0 +1,769 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "ActualValue",
+                "displayNameKey": "dataBinding.actualValue",
+                "kind": "value",
+                "options": [
+                    {
+                        "displayNameKey": "dataBinding.dataFormat",
+                        "type": "format",
+                        "name": "valueFormat"
+                    },
+                    {
+                        "displayNameKey": "dataBinding.displayUnit",
+                        "type": "displayUnit",
+                        "name": "valueDisplayUnit"
+                    }
+                ]
+            },
+            {
+                "name": "ContrastValue",
+                "displayNameKey": "dataBinding.contrastValue",
+                "kind": "value",
+                "options": [
+                    {
+                        "displayNameKey": "dataBinding.dataFormat",
+                        "type": "format",
+                        "name": "valueFormat"
+                    },
+                    {
+                        "displayNameKey": "dataBinding.displayUnit",
+                        "type": "displayUnit",
+                        "name": "valueDisplayUnit"
+                    }
+                ]
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "values": {
+                                "max": 1
+                            },
+                            "ActualValue": {
+                                "max": 1
+                            },
+                            "ContrastValue": {
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "values": {
+                    "max": 1
+                },
+                "ActualValue": {
+                    "max": 0
+                },
+                "ContrastValue": {
+                    "max": 0
+                }
+            },
+            {
+                "values": {
+                    "max": 0
+                },
+                "ActualValue": {
+                    "max": 1
+                },
+                "ContrastValue": {
+                    "max": 1
+                }
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayNameKey": "property.dataSetting.name",
+                "properties": [
+                    {
+                        "displayNameKey": "property.dataSetting.actual",
+                        "name": "Actual",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "dataset",
+                                "displayNameKey": "property.dataSetting.dataset"
+                            },
+                            {
+                                "value": "customdata",
+                                "displayNameKey": "property.dataSetting.customdata"
+                            }
+                        ],
+                        "defaultValue": "dataset"
+                    },
+                    {
+                        "name": "customActual",
+                        "type": "Input",
+                        "displayNameKey": "property.dataSetting.customActual",
+                        "min": 0,
+                        "defaultValue": "50"
+                    },
+                    {
+                        "displayNameKey": "property.dataSetting.contrast",
+                        "name": "Contrast",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "dataset",
+                                "displayNameKey": "property.dataSetting.dataset"
+                            },
+                            {
+                                "value": "customdata",
+                                "displayNameKey": "property.dataSetting.customdata"
+                            }
+                        ],
+                        "defaultValue": "dataset"
+                    },
+                    {
+                        "name": "customContrast",
+                        "type": "Input",
+                        "displayNameKey": "property.dataSetting.customContrast",
+                        "min": 0,
+                        "defaultValue": "100"
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.chartStyle.name",
+                "properties": [
+                    {
+                        "displayNameKey": "property.chartStyle.quickStyle.name",
+                        "name": "styleName",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "style1",
+                                "displayNameKey": "property.chartStyle.quickStyle.style1"
+                            },
+                            {
+                                "value": "style2",
+                                "displayNameKey": "property.chartStyle.quickStyle.style2"
+                            },
+                            {
+                                "value": "style3",
+                                "displayNameKey": "property.chartStyle.quickStyle.style3"
+                            },
+                            {
+                                "value": "style4",
+                                "displayNameKey": "property.chartStyle.quickStyle.style4"
+                            },
+                            {
+                                "value": "style5",
+                                "displayNameKey": "property.chartStyle.quickStyle.style5"
+                            },
+                            {
+                                "value": "style6",
+                                "displayNameKey": "property.chartStyle.quickStyle.style6"
+                            },
+                            {
+                                "value": "style7",
+                                "displayNameKey": "property.chartStyle.quickStyle.style7"
+                            },
+                            {
+                                "value": "style8",
+                                "displayNameKey": "property.chartStyle.quickStyle.style8"
+                            },
+                            {
+                                "value": "style9",
+                                "displayNameKey": "property.chartStyle.quickStyle.style9"
+                            }
+                        ],
+                        "defaultValue": "style1"
+                    },
+                    {
+                        "name": "initStyleName",
+                        "type": "Hidden",
+                        "defaultValue": "default"
+                    },
+                    {
+                        "name": "diffOption",
+                        "type": "Hidden",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "gaugeR",
+                        "type": "Percentage",
+                        "displayNameKey": "property.chartStyle.gaugeR",
+                        "defaultValue": 100,
+                        "max": 200
+                    },
+                    {
+                        "name": "gaugeWidth",
+                        "type": "Integer",
+                        "displayNameKey": "property.chartStyle.gaugeWidth",
+                        "defaultValue": 25
+                    },
+                    {
+                        "name": "gaugeXPosition",
+                        "type": "Percentage",
+                        "displayNameKey": "property.chartStyle.xPosition",
+                        "defaultValue": 50
+                    },
+                    {
+                        "name": "gaugeYPosition",
+                        "type": "Percentage",
+                        "displayNameKey": "property.chartStyle.yPosition",
+                        "defaultValue": 50
+                    },
+                    {
+                        "name": "startAngle",
+                        "type": "Integer",
+                        "min": -360,
+                        "max": 360,
+                        "displayNameKey": "property.chartStyle.startAngle",
+                        "defaultValue": 90
+                    },
+                    {
+                        "name": "endAngle",
+                        "type": "Integer",
+                        "min": -360,
+                        "max": 360,
+                        "displayNameKey": "property.chartStyle.endAngle",
+                        "defaultValue": -270
+                    },
+                    {
+                        "name": "gaugeBgColor",
+                        "type": "Color",
+                        "displayNameKey": "property.chartStyle.gaugeColor",
+                        "defaultValue": "#8c7df2"
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.rangeSetting.name",
+                "properties": [
+                    {
+                        "name": "dialSectionColor",
+                        "displayNameKey": "property.rangeSetting.color",
+                        "type": "Collection",
+                        "itemShape": [
+                            {
+                                "name": "section",
+                                "displayNameKey": "property.rangeSetting.section",
+                                "type": "Integer",
+                                "min": 1
+                            },
+                            {
+                                "name": "sectionMax",
+                                "displayNameKey": "property.rangeSetting.sectionMax",
+                                "type": "Integer",
+                                "defaultValue": 100
+                            },
+                            {
+                                "name": "color",
+                                "displayNameKey": "property.rangeSetting.sectionColor",
+                                "type": "Color",
+                                "defaultValue": "#509dea"
+                            }
+                        ],
+                        "defaultValue": [
+                            {
+                                "section": 1,
+                                "sectionMax": 25,
+                                "color": "#f84d4d"
+                            },
+                            {
+                                "section": 2,
+                                "sectionMax": 50,
+                                "color": "#f5ba1a"
+                            },
+                            {
+                                "section": 3,
+                                "sectionMax": 75,
+                                "color": "#509dea"
+                            },
+                            {
+                                "section": 4,
+                                "sectionMax": 100,
+                                "color": "#08bc9b"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "dialColorUseToProgress",
+                        "type": "Boolean",
+                        "displayNameKey": "property.rangeSetting.applyToProgress",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "dialColorUseToCircle",
+                        "type": "Boolean",
+                        "displayNameKey": "property.rangeSetting.applyToCircle",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "dialColorUseToLabel1",
+                        "type": "Boolean",
+                        "displayNameKey": "property.rangeSetting.applyToLabel1",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "dialColorUseToLabel2",
+                        "type": "Boolean",
+                        "displayNameKey": "property.rangeSetting.applyToLabel2",
+                        "defaultValue": false
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.bgImageSetting.name",
+                "properties": [
+                    {
+                        "name": "showBgImage",
+                        "type": "Boolean",
+                        "displayNameKey": "property.bgImageSetting.showBgImage",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "bgImageAnimate",
+                        "type": "Boolean",
+                        "displayNameKey": "property.bgImageSetting.bgImageAnimate",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "bgAnimateTime",
+                        "type": "Integer",
+                        "min": 0,
+                        "displayNameKey": "property.bgImageSetting.bgAnimateTime",
+                        "defaultValue": 10
+                    },
+                    {
+                        "displayNameKey": "property.bgImageSetting.bgAnimateDirection.name",
+                        "name": "bgAnimateDirection",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "Positive",
+                                "displayNameKey": "property.bgImageSetting.bgAnimateDirection.positive"
+                            },
+                            {
+                                "value": "Negative",
+                                "displayNameKey": "property.bgImageSetting.bgAnimateDirection.negative"
+                            }
+                        ],
+                        "defaultValue": "Positive"
+                    },
+                    {
+                        "displayNameKey": "property.bgImageSetting.imageSetting.name",
+                        "name": "bgImageSet",
+                        "type": "Enum",
+                        "items": [
+                            {
+                                "value": "bgImage1",
+                                "displayNameKey": "property.bgImageSetting.imageSetting.bgImage1"
+                            },
+                            {
+                                "value": "bgImage2",
+                                "displayNameKey": "property.bgImageSetting.imageSetting.bgImage2"
+                            },
+                            {
+                                "value": "bgImage",
+                                "displayNameKey": "property.bgImageSetting.imageSetting.custom"
+                            }
+                        ],
+                        "defaultValue": "bgImage1"
+                    },
+                    {
+                        "name": "bgImage",
+                        "type": "Image",
+                        "displayNameKey": "property.bgImageSetting.bgImage",
+                        "defaultValue": ""
+                    },
+                    {
+                        "name": "bgImageSize",
+                        "type": "Percentage",
+                        "displayNameKey": "property.bgImageSetting.bgImageSize",
+                        "defaultValue": 100
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.innerSetting.name",
+                "properties": [
+                    {
+                        "name": "gaugeCircle",
+                        "type": "Boolean",
+                        "displayNameKey": "property.innerSetting.gaugeCircle",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "gaugeCircleDge",
+                        "type": "Boolean",
+                        "displayNameKey": "property.innerSetting.gaugeCircleDge",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "gaugeCircleStartColor",
+                        "type": "Color",
+                        "displayNameKey": "property.innerSetting.gaugeCircleStartColor",
+                        "defaultValue": "#08c7df"
+                    },
+                    {
+                        "name": "gaugeCircleEndColor",
+                        "type": "Hidden",
+                        "displayNameKey": "property.innerSetting.gaugeCircleEndColor",
+                        "defaultValue": "#000"
+                    },
+                    {
+                        "name": "gaugeCircleInsideR",
+                        "type": "Integer",
+                        "displayNameKey": "property.innerSetting.gaugeCircleInsideR",
+                        "defaultValue": 0
+                    },
+                    {
+                        "name": "gaugeCircleOutsideR",
+                        "type": "Integer",
+                        "displayNameKey": "property.innerSetting.gaugeCircleOutsideR",
+                        "defaultValue": 50
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.gearSetting.name",
+                "properties": [
+                    {
+                        "name": "gaugeGear",
+                        "type": "Boolean",
+                        "displayNameKey": "property.gearSetting.gaugeGear",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "gearNumber",
+                        "type": "Integer",
+                        "displayNameKey": "property.gearSetting.gearNumber",
+                        "defaultValue": 50
+                    },
+                    {
+                        "name": "gearR",
+                        "type": "Integer",
+                        "displayNameKey": "property.gearSetting.gearR",
+                        "defaultValue": 100
+                    },
+                    {
+                        "name": "gearWidth",
+                        "type": "Integer",
+                        "displayNameKey": "property.gearSetting.gearWidth",
+                        "defaultValue": 5
+                    },
+                    {
+                        "name": "gearLength",
+                        "type": "Integer",
+                        "displayNameKey": "property.gearSetting.gearLength",
+                        "defaultValue": 30
+                    },
+                    {
+                        "name": "gearColor",
+                        "type": "Color",
+                        "displayNameKey": "property.gearSetting.gearColor",
+                        "defaultValue": "#509dea"
+                    },
+                    {
+                        "name": "gearShadowColor",
+                        "type": "Color",
+                        "displayNameKey": "property.gearSetting.gearShadowColor",
+                        "defaultValue": "#fff"
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.progressSetting.name",
+                "properties": [
+                    {
+                        "name": "showProgress",
+                        "type": "Boolean",
+                        "displayNameKey": "property.progressSetting.showProgress",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "progressRoundCap",
+                        "type": "Boolean",
+                        "displayNameKey": "property.progressSetting.progressRoundCap",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "progressRoundCapWidth",
+                        "type": "Integer",
+                        "displayNameKey": "property.progressSetting.progressWidth",
+                        "defaultValue": 25
+                    },
+                    {
+                        "name": "progressOffset",
+                        "type": "Integer",
+                        "displayNameKey": "property.progressSetting.progressOffset",
+                        "defaultValue": 0
+                    },
+                    {
+                        "name": "progressRoundColor",
+                        "type": "Color",
+                        "displayNameKey": "property.progressSetting.progressColor",
+                        "defaultValue": "#509dea"
+                    },
+                    {
+                        "name": "progressRoundColorTest",
+                        "type": "Color",
+                        "displayNameKey": "property.progressSetting.progressGradientColor",
+                        "defaultValue": "#fff"
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.splitLineSetting.name",
+                "properties": [
+                    {
+                        "name": "showsplitLine",
+                        "type": "Boolean",
+                        "displayNameKey": "property.splitLineSetting.showsplitLine",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "splitLineNumber",
+                        "type": "Integer",
+                        "displayNameKey": "property.splitLineSetting.splitLineNumber",
+                        "defaultValue": 15
+                    },
+                    {
+                        "name": "splitLineWidth",
+                        "type": "Integer",
+                        "displayNameKey": "property.splitLineSetting.splitLineWidth",
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "splitLineDistance",
+                        "type": "Integer",
+                        "displayNameKey": "property.splitLineSetting.splitLineDistance",
+                        "defaultValue": -10
+                    },
+                    {
+                        "name": "splitLineColor",
+                        "type": "Color",
+                        "displayNameKey": "property.splitLineSetting.splitLineColor",
+                        "defaultValue": "#000"
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.subTitleSetting.name",
+                "properties": [
+                    {
+                        "name": "showSubTitle",
+                        "type": "Boolean",
+                        "displayNameKey": "property.subTitleSetting.showSubTitle",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "subtitle",
+                        "type": "Text",
+                        "displayNameKey": "property.subTitleSetting.subtitle",
+                        "defaultValue": ""
+                    },
+                    {
+                        "name": "titleXPosition",
+                        "type": "Integer",
+                        "displayNameKey": "property.subTitleSetting.xPosition",
+                        "defaultValue": 0
+                    },
+                    {
+                        "name": "titleYPosition",
+                        "type": "Integer",
+                        "displayNameKey": "property.subTitleSetting.yPosition",
+                        "defaultValue": -20
+                    },
+                    {
+                        "name": "textStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "property.fontSetting",
+                        "inheritFrom": "dashboard.textStyle",
+                        "defaultValue": {
+                            "fontSize": "1.5X"
+                        },
+                        "consumeScale": true
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.dataLabel.dataLabel1",
+                "properties": [
+                    {
+                        "name": "showDataLabel1",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showDataLabel",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showActual1",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showActual",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showContrast1",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showContrast",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showDetail1",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showDetail",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "dataLabel1LineHeight",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataLabel.lineHeight",
+                        "defaultValue": 30
+                    },
+                    {
+                        "name": "dataLabel1XPosition",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataLabel.xPosition",
+                        "defaultValue": 0
+                    },
+                    {
+                        "name": "dataLabel1YPosition",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataLabel.yPosition",
+                        "defaultValue": 0
+                    },
+                    {
+                        "name": "dataLabel1TextStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "property.fontSetting",
+                        "inheritFrom": "dashboard.textStyle",
+                        "defaultValue": {
+                            "fontSize": "3.0X"
+                        },
+                        "consumeScale": true
+                    },
+                    {
+                        "name": "DetailDisplayUnit",
+                        "type": "Text",
+                        "displayNameKey": "property.dataLabel.unit",
+                        "defaultValue": ""
+                    },
+                    {
+                        "name": "DetailDisplayUnitTextStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "property.dataLabel.unitFontSetting",
+                        "inheritFrom": "dashboard.textStyle",
+                        "defaultValue": {
+                            "fontSize": "1.0X"
+                        },
+                        "consumeScale": true
+                    }
+                ]
+            },
+            {
+                "displayNameKey": "property.dataLabel.dataLabel2",
+                "properties": [
+                    {
+                        "name": "showDataLabel2",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showDataLabel",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showActual2",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showActual",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showContrast2",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showContrast",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showDetail2",
+                        "type": "Boolean",
+                        "displayNameKey": "property.dataLabel.showDetail",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "dataLabel2LineHeight",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataLabel.lineHeight",
+                        "defaultValue": 30
+                    },
+                    {
+                        "name": "dataLabel2XPosition",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataLabel.xPosition",
+                        "defaultValue": 0
+                    },
+                    {
+                        "name": "dataLabel2YPosition",
+                        "type": "Integer",
+                        "displayNameKey": "property.dataLabel.yPosition",
+                        "defaultValue": 20
+                    },
+                    {
+                        "name": "dataLabel2TextStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "property.fontSetting",
+                        "inheritFrom": "dashboard.textStyle",
+                        "defaultValue": {
+                            "fontSize": "1.2X"
+                        },
+                        "consumeScale": true
+                    }
+                ]
+            },
+            {
+                "type": "interaction",
+                "properties": [
+                    {
+                        "name": "leftMouseButton",
+                        "type": "Enum",
+                        "displayNameKey": "property.clickAction.name",
+                        "items": [
+                            {
+                                "value": "Jump",
+                                "displayNameKey": "property.clickAction.jump"
+                            }
+                        ],
+                        "defaultValue": "none"
+                    }
+                ]
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "convertVisual"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

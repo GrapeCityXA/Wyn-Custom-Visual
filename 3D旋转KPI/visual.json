@@ -1,0 +1,21 @@
+{
+    "name": "3D旋转KPI",
+    "displayName": "",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": [
+        "html2canvas",
+        "lodash"
+    ],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$trusted": true
+    },
+    "id": "7b683240-b93a-11eb-af81-35ebfac599f2",
+    "cliVersion": "6.0.0"
+}

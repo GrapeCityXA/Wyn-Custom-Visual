@@ -1,0 +1,261 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "valueIn",
+                "displayNameKey": "内圈数值",
+                "kind": "value",
+                "options": [
+                    {
+                        "displayNameKey": "数据格式",
+                        "type": "format",
+                        "name": "valueFormat"
+                    }
+                ]
+            },
+            {
+                "name": "dimensionIn",
+                "aliasName": "dimension",
+                "displayNameKey": "内圈分类",
+                "kind": "grouping"
+            },
+            {
+                "name": "valueOut",
+                "displayNameKey": "外圈数值",
+                "kind": "value",
+                "options": [
+                    {
+                        "displayNameKey": "数据格式",
+                        "type": "format",
+                        "name": "valueFormat"
+                    }
+                ]
+            },
+            {
+                "name": "dimensionOut",
+                "aliasName": "dimension",
+                "displayNameKey": "外圈分类",
+                "kind": "groupingOrValue"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "value": {
+                                "min": 1
+                            },
+                            "dimension": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "value": {
+                    "max": 1
+                },
+                "dimension": {
+                    "max": 1
+                },
+                "series": {
+                    "min": 2
+                }
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayName": "图表样式",
+                "properties": [
+                    {
+                        "name": "legendTextColor",
+                        "type": "Color",
+                        "displayName": "图例文字颜色",
+                        "defaultValue": "#fff"
+                    },
+                    {
+                        "name": "pieColor",
+                        "type": "Palette",
+                        "displayName": "饼图配色",
+                        "defaultValue": "['#5470c6', '#91cc75', '#fac858', '#ee6666', '#73c0de', '#3ba272', '#fc8452', '#9a60b4', '#ea7ccc']"
+                    },
+                    {
+                        "name": "ringColor",
+                        "type": "Palette",
+                        "displayName": "圆环配色",
+                        "defaultValue": "['#5470c6', '#91cc75', '#fac858', '#ee6666', '#73c0de', '#3ba272', '#fc8452', '#9a60b4', '#ea7ccc']"
+                    },
+                    {
+                        "name": "legendRichColor",
+                        "type": "Color",
+                        "displayName": "圆环标签背景色",
+                        "defaultValue": "#00000"
+                    },
+                    {
+                        "name": "legendRichBorderColor",
+                        "type": "Color",
+                        "displayName": "圆环标签边框色",
+                        "defaultValue": "#8C8D8E"
+                    },
+                    {
+                        "name": "legendRichBorderWidth",
+                        "type": "Integer",
+                        "displayName": "圆环标签边框宽度",
+                        "defaultValue": 1
+                    },
+                    {
+                        "name": "legendRichBorderRadius",
+                        "type": "Integer",
+                        "displayName": "圆环标签圆角值",
+                        "defaultValue": 4
+                    }
+                ]
+            },
+            {
+                "displayName": "内部数据标注",
+                "properties": [
+                    {
+                        "name": "showInsideLabel",
+                        "type": "Boolean",
+                        "displayName": "显示标注",
+                        "defaultValue": true
+                    },
+                    {
+                        "type": "Boolean",
+                        "name": "showInsideLabelValue",
+                        "displayName": "显示系列值",
+                        "defaultValue": false
+                    },
+                    {
+                        "type": "Boolean",
+                        "name": "showInsideLabelPercent",
+                        "displayName": "显示比值",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showInsideTextStyle",
+                        "displayName": "标签字体设置",
+                        "type": "TextStyle",
+                        "defaultValue": {
+                            "color": "#f0f0f0",
+                            "fontFamily": "微软雅黑",
+                            "fontSize": "10pt",
+                            "fontStyle": "Normal",
+                            "fontWeight": "Normal"
+                        }
+                    }
+                ]
+            },
+            {
+                "displayName": "外部数据标注",
+                "properties": [
+                    {
+                        "name": "showExternalLabel",
+                        "type": "Boolean",
+                        "displayName": "显示标注",
+                        "defaultValue": true
+                    },
+                    {
+                        "type": "Boolean",
+                        "name": "showExternalLabelValue",
+                        "displayName": "显示系列值",
+                        "defaultValue": false
+                    },
+                    {
+                        "type": "Boolean",
+                        "name": "showExternalLabelPercent",
+                        "displayName": "显示比值",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showExternalTextStyle",
+                        "displayName": "标签字体设置",
+                        "type": "TextStyle",
+                        "defaultValue": {
+                            "color": "#f0f0f0",
+                            "fontFamily": "微软雅黑",
+                            "fontSize": "15pt",
+                            "fontStyle": "Normal",
+                            "fontWeight": "Normal"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "interaction",
+                "properties": [{
+                    "name": "leftMouseButton",
+                    "type": "Enum",
+                    "displayName": "鼠标左键选项",
+                    "items": [
+                        {
+                            "value": "none",
+                            "displayNameKey": "无"
+                        },
+                        {
+                            "value": "showToolTip",
+                            "displayNameKey": "显示工具提示"
+                        },
+                        {
+                            "value": "Keep",
+                            "displayNameKey": "保留"
+                        },
+                        {
+                            "value": "Exclude",
+                            "displayNameKey": "排除"
+                        },
+                        {
+                            "value": "Drill",
+                            "displayNameKey": "钻取"
+                        },
+                        {
+                            "value": "Jump",
+                            "displayNameKey": "跳转"
+                        }
+                    ],
+                    "defaultValue": "none"
+                },
+                {
+                    "name": "onlySelect",
+                    "type": "Boolean",
+                    "displayName": "数据单选",
+                    "defaultValue": true
+                }
+            ]
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "sort"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

@@ -1,0 +1,65 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "dimensions",
+                "displayNameKey": "视频地址",
+                "kind": "grouping"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {}
+            }
+        ],
+        "conditions": [
+            {
+                "dimensions": {
+                    "max": 1
+                }
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayName": "自定义属性",
+                "properties": [
+                    {
+                        "name": "custom",
+                        "type": "Boolean",
+                        "displayName": "使用内嵌视频",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "videoUrl",
+                        "type": "Text",
+                        "displayName": "视频地址",
+                        "defaultValue": "http://video1.grapecity.com.cn/WynEnterprise/online/wyn3.0.mp4"
+                    },
+                    {
+                        "name": "autoplay",
+                        "type": "Boolean",
+                        "displayName": "自动播放",
+                        "defaultValue": true
+                    }
+                ]
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

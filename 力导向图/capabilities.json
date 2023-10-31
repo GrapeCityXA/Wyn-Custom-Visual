@@ -1,0 +1,434 @@
+{
+  "dataBinding": {
+    "dataRoles": [
+      {
+        "name": "sourceName",
+        "displayNameKey": "databinding.sourceName",
+        "kind": "grouping"
+      },
+      {
+        "name": "sourceSeries",
+        "displayNameKey": "databinding.sourceSeries",
+        "kind": "grouping"
+      },
+      {
+        "name": "sourceImage",
+        "displayNameKey": "databinding.sourceImage",
+        "kind": "attribute",
+        "_imageFormat": true
+      },
+      {
+        "name": "targetName",
+        "displayNameKey": "databinding.targetName",
+        "kind": "grouping"
+      },
+      {
+        "name": "targetSeries",
+        "displayNameKey": "databinding.targetSeries",
+        "kind": "grouping"
+      },
+      {
+        "name": "targetImage",
+        "displayNameKey": "databinding.targetImage",
+        "kind": "attribute",
+        "_imageFormat": true
+      },
+      {
+        "name": "weight",
+        "displayNameKey": "databinding.weight",
+        "kind": "value"
+      }
+    ],
+    "dataViewMappings": [
+      {
+        "plain": {
+          "required": [
+            {
+              "sourceName": {
+                "min": 1
+              },
+              "targetName": {
+                "min": 1
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "conditions": [
+      {
+        "sourceName": {
+          "max": 1
+        },
+        "sourceSeries": {
+          "max": 1
+        },
+        "sourceImage": {
+          "max": 1
+        },
+        "targetName": {
+          "max": 1
+        },
+        "targetSeries": {
+          "max": 1
+        },
+        "targetImage": {
+          "max": 1
+        },
+        "weight": {
+          "max": 1
+        }
+      }
+    ]
+  },
+  "options": {
+    "visual": [
+      {
+        "displayNameKey": "inspector.common.name",
+        "properties": [
+          {
+            "name": "palette",
+            "displayNameKey": "inspector.common.palette",
+            "type": "Palette",
+            "inheritFrom": "dashboard.palette"
+          },
+          {
+            "name": "graphOpacity",
+            "displayNameKey": "inspector.common.graphOpacity",
+            "type": "Percentage",
+            "inheritFrom": "dashboard._graphOpacity"
+          },
+          {
+            "name": "graphDraggable",
+            "displayNameKey": "inspector.common.graphDraggable",
+            "type": "Boolean",
+            "defaultValue": false
+          },
+          {
+            "name": "graphZoomable",
+            "displayNameKey": "inspector.common.graphZoomable",
+            "type": "Boolean",
+            "defaultValue": true
+          },
+          {
+            "name": "autoZoom",
+            "displayNameKey": "inspector.common.autoZoom",
+            "type": "Boolean",
+            "defaultValue": true
+          },
+          {
+            "name": "zoom",
+            "displayNameKey": "inspector.common.zoom",
+            "type": "Float",
+            "defaultValue": 1,
+            "min": 0,
+            "_excludeMin": true
+          }
+        ]
+      },
+      {
+        "displayNameKey": "inspector.node.name",
+        "properties": [
+          {
+            "name": "draggable",
+            "structuredPath": "node",
+            "displayNameKey": "inspector.node.draggable",
+            "type": "Boolean",
+            "defaultValue": false
+          },
+          {
+            "name": "sizeSource",
+            "structuredPath": "node",
+            "displayNameKey": "inspector.node.sizeSource.name",
+            "type": "Enum",
+            "defaultValue": "byWeight",
+            "items": [
+              {
+                "value": "byWeight",
+                "displayNameKey": "inspector.node.sizeSource.byWeight"
+              },
+              {
+                "value": "allEqual",
+                "displayNameKey": "inspector.node.sizeSource.allEqual"
+              }
+            ]
+          },
+          {
+            "name": "size",
+            "structuredPath": "node",
+            "displayNameKey": "inspector.node.size",
+            "type": "Integer",
+            "min": 1,
+            "defaultValue": 20
+          },
+          {
+            "name": "minSize",
+            "structuredPath": "node",
+            "displayNameKey": "inspector.node.minSize",
+            "type": "Integer",
+            "min": 1,
+            "defaultValue": 20
+          },
+          {
+            "name": "maxSize",
+            "structuredPath": "node",
+            "displayNameKey": "inspector.node.maxSize",
+            "type": "Integer",
+            "min": 1,
+            "defaultValue": 50
+          },
+          {
+            "name": "showLabel",
+            "structuredPath": "node",
+            "displayNameKey": "inspector.node.showLabel",
+            "type": "Boolean",
+            "defaultValue": false
+          },
+          {
+            "name": "labelTextStyle",
+            "structuredPath": "node",
+            "displayNameKey": "inspector.node.labelTextStyle",
+            "type": "TextStyle",
+            "inheritFrom": "dashboard.textStyle",
+            "consumeScale": true
+          }
+        ]
+      },
+      {
+        "displayNameKey": "inspector.edge.name",
+        "properties": [
+          {
+            "name": "isDirected",
+            "structuredPath": "edge",
+            "displayNameKey": "inspector.edge.isDirected",
+            "type": "Boolean",
+            "defaultValue": false
+          },
+          {
+            "name": "color",
+            "structuredPath": "edge",
+            "displayNameKey": "inspector.edge.color",
+            "type": "Color",
+            "defaultValue": "#999999"
+          },
+          {
+            "name": "curveness",
+            "structuredPath": "edge",
+            "displayNameKey": "inspector.edge.curveness",
+            "type": "Percentage",
+            "defaultValue": 0
+          },
+          {
+            "name": "minWidth",
+            "structuredPath": "edge",
+            "displayNameKey": "inspector.edge.minWidth",
+            "type": "Integer",
+            "min": 1,
+            "defaultValue": 1
+          },
+          {
+            "name": "maxWidth",
+            "structuredPath": "edge",
+            "displayNameKey": "inspector.edge.maxWidth",
+            "type": "Integer",
+            "min": 1,
+            "defaultValue": 5
+          }
+        ]
+      },
+      {
+        "displayNameKey": "inspector.legend.name",
+        "properties": [
+          {
+            "name": "show",
+            "displayNameKey": "inspector.legend.show",
+            "structuredPath": "legend",
+            "type": "Boolean",
+            "defaultValue": false
+          },
+          {
+            "name": "textStyle",
+            "displayNameKey": "inspector.legend.textStyle",
+            "structuredPath": "legend",
+            "type": "TextStyle",
+            "inheritFrom": "dashboard.textStyle",
+            "consumeScale": true
+          },
+          {
+            "name": "orientation",
+            "displayNameKey": "inspector.legend.orientation.name",
+            "structuredPath": "legend",
+            "type": "Enum",
+            "defaultValue": "vertical",
+            "items": [
+              {
+                "value": "vertical",
+                "displayNameKey": "inspector.legend.orientation.vertical"
+              },
+              {
+                "value": "horizontal",
+                "displayNameKey": "inspector.legend.orientation.horizontal"
+              }
+            ]
+          },
+          {
+            "name": "horizontalPosition",
+            "displayNameKey": "inspector.legend.horizontalPosition.name",
+            "structuredPath": "legend",
+            "type": "Enum",
+            "defaultValue": "right",
+            "items": [
+              {
+                "value": "left",
+                "displayNameKey": "inspector.legend.horizontalPosition.left"
+              },
+              {
+                "value": "right",
+                "displayNameKey": "inspector.legend.horizontalPosition.right"
+              },
+              {
+                "value": "center",
+                "displayNameKey": "inspector.legend.horizontalPosition.center"
+              }
+            ]
+          },
+          {
+            "name": "verticalPosition",
+            "displayNameKey": "inspector.legend.verticalPosition.name",
+            "structuredPath": "legend",
+            "type": "Enum",
+            "defaultValue": "middle",
+            "items": [
+              {
+                "value": "top",
+                "displayNameKey": "inspector.legend.verticalPosition.top"
+              },
+              {
+                "value": "bottom",
+                "displayNameKey": "inspector.legend.verticalPosition.bottom"
+              },
+              {
+                "value": "middle",
+                "displayNameKey": "inspector.legend.verticalPosition.middle"
+              }
+            ]
+          },
+          {
+            "name": "wrapLegend",
+            "displayNameKey": "inspector.legend.wrapLegend",
+            "structuredPath": "legend",
+            "type": "Boolean",
+            "defaultValue": true
+          }
+        ]
+      },
+      {
+        "type": "interaction",
+        "properties": [
+          {
+            "name": "interactionMode",
+            "displayNameKey": "inspector.interaction.mode.name",
+            "type": "Enum",
+            "defaultValue": "edge",
+            "items": [
+              {
+                "value": "node",
+                "displayNameKey": "inspector.interaction.mode.node"
+              },
+              {
+                "value": "edge",
+                "displayNameKey": "inspector.interaction.mode.edge"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "title"
+      },
+      {
+        "type": "appearance"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "type": "focus"
+    },
+    {
+      "type": "annotation"
+    },
+    {
+      "type": "export"
+    },
+    {
+      "type": "shareScenario"
+    },
+    {
+      "type": "openFullDashboard"
+    },
+    {
+      "type": "clearSelection"
+    },
+    {
+      "type": "filter"
+    },
+    {
+      "type": "rank"
+    },
+    {
+      "type": "showData",
+      "rule": {
+        "out": [
+          {
+            "mode": "post",
+            "execute": [
+              {
+                "source": "sourceName",
+                "target": "rows",
+                "cmd": "all"
+              },
+              {
+                "source": "sourceSeries",
+                "target": "rows",
+                "cmd": "all"
+              },
+              {
+                "source": "sourceImage",
+                "target": "rows",
+                "cmd": "all"
+              },
+              {
+                "source": "targetName",
+                "target": "columns",
+                "cmd": "all"
+              },
+              {
+                "source": "targetSeries",
+                "target": "columns",
+                "cmd": "all"
+              },
+              {
+                "source": "targetImage",
+                "target": "columns",
+                "cmd": "all"
+              },
+              {
+                "source": "weight",
+                "target": "values",
+                "cmd": "all"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "analysisPath"
+    },
+    {
+      "type": "saveAsTemplate"
+    }
+  ],
+  "analysis": []
+}

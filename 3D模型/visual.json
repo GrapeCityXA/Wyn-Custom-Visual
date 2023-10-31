@@ -1,0 +1,18 @@
+{
+    "name": "3D Model Visual",
+    "displayNameKey": "visualName",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": ["html2canvas"],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": true,
+        "$trusted": true
+    },
+    "cliVersion": "5.0.0",
+    "id": "e7afb0b0-0974-11ec-a172-5d8efaf861e6"
+}

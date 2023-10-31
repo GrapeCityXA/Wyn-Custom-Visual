@@ -1,0 +1,18 @@
+{
+    "name": "帕累托图",
+    "displayName": "帕累托图",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": ["echarts", "lodash"],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "id": "848e6ba0-b93a-11eb-8030-1db664883965",
+    "cliVersion": "6.0.0"
+}

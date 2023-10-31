@@ -1,0 +1,179 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "ActualValue",
+                "displayNameKey": "dataBinding.actualValue",
+                "kind": "value"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "ActualValue": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "ActualValue": {
+                    "max": 1
+                }
+            }
+        ]
+    },
+    "options": {
+        "common": {
+            "size": {
+                "height": 100,
+                "width": 200
+            }
+        },
+        "visual": [
+            {
+                "displayNameKey": "property.chartStyle",
+                "properties": [
+                    {
+                        "name": "animationMode",
+                        "type": "Enum",
+                        "displayNameKey": "property.animationMode.name",
+                        "items": [
+                            {
+                                "value": "slide",
+                                "displayNameKey": "property.animationMode.slide"
+                            },
+                            {
+                                "value": "flip",
+                                "displayNameKey": "property.animationMode.flip"
+                            }
+                        ],
+                        "defaultValue": "slide"
+                    },
+                    {
+                        "name": "animationDuration",
+                        "type": "Integer",
+                        "displayNameKey": "property.animationDuration",
+                        "defaultValue": 1,
+                        "min": 0
+                    },
+                    {
+                        "name": "decimalLength",
+                        "type": "Integer",
+                        "displayNameKey": "property.decimalLength",
+                        "defaultValue": 0,
+                        "min": 0
+                    },
+                    {
+                        "name": "integerType",
+                        "type": "Enum",
+                        "displayNameKey": "property.integerType.name",
+                        "items": [
+                            {
+                                "value": "auto",
+                                "displayNameKey": "property.integerType.auto"
+                            },
+                            {
+                                "value": "manual",
+                                "displayNameKey": "property.integerType.manual"
+                            }
+                        ],
+                        "defaultValue": "auto"
+                    },
+                    {
+                        "name": "integerLength",
+                        "type": "Integer",
+                        "displayNameKey": "property.integerLength",
+                        "defaultValue": 1,
+                        "min": 1
+                    },
+                    {
+                        "name": "showThousandSign",
+                        "type": "Boolean",
+                        "displayNameKey": "property.showThousandSign",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "backgroundColor",
+                        "type": "Color",
+                        "displayNameKey": "property.backgroundColor",
+                        "defaultValue": "#0a2597"
+                    },
+                    {
+                        "name": "gradientBackgroundColor",
+                        "type": "Color",
+                        "displayNameKey": "property.gradientBackgroundColor",
+                        "defaultValue": "#02eef7"
+                    },
+                    {
+                        "name": "gradientType",
+                        "type": "Enum",
+                        "displayNameKey": "property.gradientType.name",
+                        "items": [
+                            {
+                                "value": "null",
+                                "displayNameKey": "property.gradientType.null"
+                            },
+                            {
+                                "value": "center",
+                                "displayNameKey": "property.gradientType.center"
+                            },
+                            {
+                                "value": "topToBottom",
+                                "displayNameKey": "property.gradientType.topToBottom"
+                            }
+                        ],
+                        "defaultValue": "center"
+                    },
+                    {
+                        "name": "textStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "property.fontSetting",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true,
+                        "defaultValue": {
+                            "color": "#02eef7",
+                            "fontSize": "-1x",
+                            "fontWeight": "Bolder"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "interaction"
+            },
+            {
+                "type": "title"
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "focus"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "rank"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

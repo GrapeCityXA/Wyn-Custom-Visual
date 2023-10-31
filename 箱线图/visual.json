@@ -1,0 +1,18 @@
+{
+    "name": "Box and Whiskers Plot",
+    "displayName": "Box and Whiskers Plot",
+    "displayNameKey": "boxAndWhiskersPlot",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": ["echarts", "lodash"],
+    "assets": {
+        "images": {}
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "cliVersion": "5.0.0",
+    "id": "8a43a390-bd3f-11eb-9326-ff5d1949d99b"
+}

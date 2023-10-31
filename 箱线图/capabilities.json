@@ -1,0 +1,320 @@
+{
+    "dataBinding": {
+        "dataRoles": [
+            {
+                "name": "value",
+                "displayNameKey": "dataBinding.value",
+                "kind": "value"
+            },
+            {
+                "name": "variation",
+                "displayNameKey": "dataBinding.variation",
+                "kind": "grouping"
+            },
+            {
+                "name": "category",
+                "displayNameKey": "dataBinding.category",
+                "kind": "grouping"
+            },
+            {
+                "name": "series",
+                "displayNameKey": "dataBinding.series",
+                "kind": "grouping"
+            }
+        ],
+        "dataViewMappings": [
+            {
+                "plain": {
+                    "required": [
+                        {
+                            "value": {
+                                "min": 1
+                            },
+                            "variation": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "value": {
+                    "max": 1
+                },
+                "variation": {
+                    "max": 1
+                },
+                "category": {
+                    "max": 1
+                },
+                "series": {
+                    "max": 1
+                }
+            }
+        ]
+    },
+    "options": {
+        "visual": [
+            {
+                "displayNameKey": "options.boxPlotStyle",
+                "properties": [
+                    {
+                        "name": "maintainColorAssignment",
+                        "type": "ColorAssignment",
+                        "displayNameKey": "options.maintainColorAssignment",
+                        "defaultValue": false,
+                        "palettePath": "color"
+                    },
+                    {
+                        "name": "color",
+                        "type": "Palette",
+                        "displayNameKey": "options.color",
+                        "inheritFrom": "dashboard.palette"
+                    },
+                    {
+                        "name": "opacity",
+                        "type": "Percentage",
+                        "displayNameKey": "options.opacity",
+                        "defaultValue": 80
+                    },
+                    {
+                        "name": "isFill",
+                        "type": "Boolean",
+                        "displayNameKey": "options.isFill",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "boxWidth",
+                        "type": "Percentage",
+                        "displayNameKey": "options.boxWidth",
+                        "defaultValue": 60
+                    },
+                    {
+                        "name": "borderWidth",
+                        "type": "Integer",
+                        "displayNameKey": "options.borderWidth",
+                        "min": 1,
+                        "defaultValue": 2
+                    },
+                    {
+                        "name": "borderType",
+                        "type": "Enum",
+                        "displayNameKey": "options.borderType",
+                        "items": [
+                            {
+                                "value": "solid",
+                                "displayNameKey": "options.solid"
+                            },
+                            {
+                                "value": "dashed",
+                                "displayNameKey": "options.dashed"
+                            },
+                            {
+                                "value": "dotted",
+                                "displayNameKey": "options.dotted"
+                            }
+                        ],
+                        "defaultValue": "solid"
+                    },
+                    {
+                        "name": "showOutliers",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showOutliers",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "symbolSize",
+                        "type": "Integer",
+                        "displayNameKey": "options.symbolSize",
+                        "min": 1,
+                        "defaultValue": 10
+                    },
+                    {
+                        "name": "large",
+                        "type": "Boolean",
+                        "displayNameKey": "options.large",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "largeThreshold",
+                        "type": "Integer",
+                        "displayNameKey": "options.largeThreshold",
+                        "min": 10,
+                        "defaultValue": 200
+                    }
+                ]
+            },
+            {
+                "type": "interaction"
+            },
+            {
+                "type": "title"
+            },
+            {
+                "name": "legend",
+                "displayNameKey": "options.legend",
+                "properties": [
+                    {
+                        "name": "showLegend",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showLegend",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "legendTextStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "options.legendTextStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true
+                    }
+                ]
+            },
+            {
+                "name": "categoryAxis",
+                "displayNameKey": "options.categoryAxis",
+                "properties": [
+                    {
+                        "name": "showAxis",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showAxis",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showAxisLine",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showAxisLine",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showTickLabels",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showTickLabels",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showTickMarks",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showTickMarks",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "axisTextStyle",
+                        "type": "TextStyle",
+                        "displayNameKey": "options.axisTextStyle",
+                        "inheritFrom": "dashboard.textStyle",
+                        "consumeScale": true
+                    }
+                ]
+            },
+            {
+                "name": "valueAxis",
+                "displayNameKey": "options.valueAxis",
+                "properties": [
+                    {
+                        "name": "showValueAxis",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showAxis",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showSplitLine",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showSplitLine",
+                        "defaultValue": false
+                    },
+                    {
+                        "name": "showValueAxisLine",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showAxisLine",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showValueTickLabels",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showTickLabels",
+                        "defaultValue": true
+                    },
+                    {
+                        "name": "showValueTickMarks",
+                        "type": "Boolean",
+                        "displayNameKey": "options.showTickMarks",
+                        "defaultValue": true
+                    }
+                ]
+            },
+            {
+                "type": "appearance"
+            }
+        ]
+    },
+    "actions": [
+        {
+            "type": "clearSelection"
+        },
+        {
+            "type": "focus"
+        },
+        {
+            "type": "annotation"
+        },
+        {
+            "type": "export"
+        },
+        {
+            "type": "shareScenario"
+        },
+        {
+            "type": "openFullDashboard"
+        },
+        {
+            "type": "filter"
+        },
+        {
+            "type": "sort"
+        },
+        {
+            "type": "rank"
+        },
+        {
+            "type": "showData",
+            "rule": {
+                "out": [
+                    {
+                        "mode": "pre",
+                        "execute": [
+                            {
+                                "source": "value",
+                                "target": "values",
+                                "cmd": "first"
+                            },
+                            {
+                                "source": "variation",
+                                "target": "rows",
+                                "cmd": "first"
+                            },
+                            {
+                                "source": "category",
+                                "target": "columns",
+                                "cmd": "first"
+                            },
+                            {
+                                "source": "series",
+                                "target": "columns",
+                                "cmd": "first"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "analysisPath"
+        },
+        {
+          "type": "saveAsTemplate"
+        }
+    ],
+    "analysis": []
+}

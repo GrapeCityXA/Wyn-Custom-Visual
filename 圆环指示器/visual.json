@@ -1,0 +1,21 @@
+{
+    "name": "圆环指示器",
+    "version": "0.0.1",
+    "displayName": "圆环指示器",
+    "displayNameKey": "",
+    "icon": "assets/icon.png",
+    "description": "",
+    "externalJs": [],
+    "externalCss": [],
+    "dependencies": ["echarts"],
+    "assets": {
+        "images": {
+            "default": "assets/default.png"
+        }
+    },
+    "configuration": {
+        "$runInIframe": false
+    },
+    "id": "833e6c00-b93a-11eb-95a2-f31ee32e8807",
+    "cliVersion": "6.0.0"
+}

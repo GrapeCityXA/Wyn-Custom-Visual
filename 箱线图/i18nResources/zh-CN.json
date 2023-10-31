@@ -1,0 +1,46 @@
+{
+  "boxAndWhiskersPlot": "盒须图",
+  "dataBinding": {
+    "value": "数值",
+    "variation": "变异",
+    "category": "分类",
+    "series": "系列"
+  },
+  "options": {
+    "boxPlotStyle": "图表样式",
+    "maintainColorAssignment": "保持颜色分配",
+    "color": "调色板",
+    "opacity": "图表不透明度",
+    "isFill": "填充背景色",
+    "boxWidth": "盒须图宽度",
+    "borderWidth": "边框宽度",
+    "borderType": "边框类型",
+    "solid": "实线",
+    "dashed": "虚线",
+    "dotted": "点线",
+    "showOutliers": "显示异常点",
+    "symbolSize": "异常点大小",
+    "large": "优化异常点",
+    "largeThreshold": "异常点阈值",
+    "legend": "图例",
+    "showLegend": "显示图例",
+    "legendTextStyle": "系列字体设置",
+    "categoryAxis": "分类轴",
+    "valueAxis": "数值轴",
+    "showAxis": "显示轴",
+    "showAxisLine": "显示轴线",
+    "showTickLabels": "显示刻度标签",
+    "showTickMarks": "显示刻度标记",
+    "axisTextStyle": "轴字体设置",
+    "showSplitLine": "显示网格线"
+  },
+  "visual": {
+    "lower": "下限",
+    "q1": "第一四分位数",
+    "median": "中位数",
+    "q3": "第三四分位数",
+    "upper": "上限",
+    "null": "[空值]",
+    "emptyDisplay": "[空白]"
+  }
+}
